@@ -13,7 +13,8 @@ a {
   justify-content: center;
 }
 .button_outline:hover {
-  background-color: red;
+  text-shadow: 0 0 1px #00144b;
+  box-shadow: 0 0 1px #00144b;
 }
 
 * {
@@ -21,18 +22,15 @@ a {
   padding: 0;
   box-sizing: border-box;
   font-family: "Neue Plak", sans-serif;
-}
-
-html {
-  height: 100%;
+  transition: 0.2s;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background: #fbfbfb;
   background: url(/img/bg_zebra.png), linear-gradient(45deg, #fbfbfb 20%, #00c4f2 60%, #004fad 100%);
-  background-size: 50px, auto;
+  background-size: 100px, auto;
   overflow-x: hidden;
 }
 
@@ -49,6 +47,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+  z-index: 2;
 }
 nav > .nav_middle {
   display: flex;
@@ -56,14 +55,16 @@ nav > .nav_middle {
   justify-content: space-between;
   gap: 2rem;
 }
+nav > .nav_middle > a:hover {
+  text-shadow: 0 0 1px #00144b;
+}
 
 main {
   width: calc(100% - 2vw);
   height: calc(100% - 2vw);
   position: relative;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   padding: 1rem;
 }
 main .main_part {
@@ -76,11 +77,17 @@ main .main_part#main_part_1 > .banner {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  align-items: center;
 }
 main .main_part#main_part_1 > .banner > h1 {
   font-size: 3rem;
   text-align: center;
   width: 100%;
   font-weight: 900;
+}
+main .main_part#main_part_1 > .banner > a {
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
