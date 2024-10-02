@@ -1,0 +1,42 @@
+// Imports
+@import url('https://fonts.cdnfonts.com/css/neue-plak');
+
+
+// Roots
+
+$primary:#00C4F2;
+$secondary:#004FAD;
+$tertiary:#94D6EA;
+$dark:#00144b;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neue Plak', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+
+body{
+    height: 100%;
+    background: #fbfbfb;
+    background: url(/img/bg_zebra.png) ,linear-gradient(45deg, #fbfbfb 0%, #00c4f2 50%, #004fad 100%);
+}
+
+
+main{
+    width: calc(100% - 2vw);
+    height: calc(100% - 2vw);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%) ;
+    border: 1px solid $dark;
+    padding: 1rem;
+}
