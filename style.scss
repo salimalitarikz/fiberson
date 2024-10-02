@@ -23,6 +23,7 @@ a{
 // General Classes
 
 .button_outline{
+    @extend .animated_link;
     border: 1px solid $dark;
     padding: .2rem .8rem;
     border-radius: 5px;
@@ -34,8 +35,49 @@ a{
         text-shadow: 0 0 1px $dark;
         box-shadow: 0 0 1px $dark;
     }
-        
+}
+
+
+.animated_link{
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            >span{
+                transition: transform .5s, opacity .3s;
+            }
+
+            &::before{
+                width: 100%;
+                text-align: center;
+                content: attr(data-content);
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) translateY(65%);
+                opacity: 0;
+                transition: all .5s;
+                
+            }
+
+            &:hover{
+                text-shadow: 0 0 1px $dark;
+                
+                >span{
+                    display: inline-block;
+                    transform: translateY(-1rem);
+                    opacity: 0;
+                    
+                }
     
+                &::before{
+                    transform: translateX(-50%) translateY(0%);
+                    opacity: 1;
+                }
+    
+            }
 }
 
 
@@ -79,12 +121,16 @@ nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 3rem;
 
-
-        >a:hover{
-            text-shadow: 0 0 1px $dark;
+        >a{
+            @extend .animated_link;
         }
+
+        
+
+
+        
     }
 }
 
@@ -96,7 +142,6 @@ main{
     transform:translate(-50% ) ;
     // border: 1px solid $dark;
     padding: 1rem;
-
 
     .main_part{
 
@@ -125,6 +170,7 @@ main{
                 >a{
                     width: fit-content;
                     transform: scale(1.2);
+                    padding: .8rem 1rem;
                 }
 
             }

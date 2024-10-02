@@ -17,6 +17,40 @@ a {
   box-shadow: 0 0 1px #00144b;
 }
 
+.animated_link, nav > .nav_middle > a, .button_outline {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animated_link > span, nav > .nav_middle > a > span, .button_outline > span {
+  transition: transform 0.5s, opacity 0.3s;
+}
+.animated_link::before, nav > .nav_middle > a::before, .button_outline::before {
+  width: 100%;
+  text-align: center;
+  content: attr(data-content);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.animated_link:hover, nav > .nav_middle > a:hover, .button_outline:hover {
+  text-shadow: 0 0 1px #00144b;
+}
+.animated_link:hover > span, nav > .nav_middle > a:hover > span, .button_outline:hover > span {
+  display: inline-block;
+  transform: translateY(-1rem);
+  opacity: 0;
+}
+.animated_link:hover::before, nav > .nav_middle > a:hover::before, .button_outline:hover::before {
+  transform: translateX(-50%) translateY(0%);
+  opacity: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,12 +87,8 @@ nav > .nav_middle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
 }
-nav > .nav_middle > a:hover {
-  text-shadow: 0 0 1px #00144b;
-}
-
 main {
   width: calc(100% - 2vw);
   height: calc(100% - 2vw);
@@ -90,4 +120,5 @@ main .main_part#main_part_1 > .banner > a {
   width: -moz-fit-content;
   width: fit-content;
   transform: scale(1.2);
+  padding: 0.8rem 1rem;
 }/*# sourceMappingURL=style.css.map */
