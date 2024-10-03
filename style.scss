@@ -17,6 +17,7 @@ $light:#dedede;
 a{
     color:#000;
     text-decoration: none;
+    
 }
 
 
@@ -44,9 +45,11 @@ a{
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
 
             >span{
                 transition: transform .5s, opacity .3s;
+                text-align: center;
             }
 
             &::before{
@@ -103,18 +106,37 @@ body{
 nav{
     background-color: $light;
     width: 97%;
-    height: 60px;
+    height: 50px;
     position: fixed;
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 10px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
     z-index: 2;
+    
 
+    >.nav_left{
+        >a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            >img{
+                height: 2.5rem;
+                object-fit: contain;
+            }
+
+            >span{
+                font-size: 1.4rem;
+            }
+        }
+    }
 
     >.nav_middle{
         display: flex;
@@ -149,15 +171,13 @@ main{
 
 
         &#main_part_1{
+          
 
-
-            &::before{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                content: url(/ui/m_p_1.png);
+            .background_image{
                 position: absolute;
-
+                left: 45%;
+                top: 0;
+                transform: translateX(-50%);
             }
 
 
@@ -179,17 +199,17 @@ main{
                 }
 
                 >a{
-                    width: 8%;
+                    width: fit-content;
                     transform: scale(1.2);
-                    padding: .8rem 1rem;
+                    padding: .8rem 1.5rem;
                     transition: .3s;
 
 
                     &:hover{
                         background-color: $dark;
                         color: $light;
-                        width: calc(8% + 2rem);
                         border-radius: 30px;
+                        padding: .8rem 2.5rem;
                     }
                 }
 
