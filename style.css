@@ -17,7 +17,7 @@ a {
   box-shadow: 0 0 1px #00144b;
 }
 
-.animated_link, nav > .nav_middle > a, .button_outline {
+.animated_link, nav .nav_right > a, nav > .nav_middle > a {
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -25,10 +25,10 @@ a {
   align-items: center;
   justify-content: center;
 }
-.animated_link > span, nav > .nav_middle > a > span, .button_outline > span {
+.animated_link > span, nav .nav_right > a > span, nav > .nav_middle > a > span {
   transition: transform 0.5s, opacity 0.3s;
 }
-.animated_link::before, nav > .nav_middle > a::before, .button_outline::before {
+.animated_link::before, nav .nav_right > a::before, nav > .nav_middle > a::before {
   width: 100%;
   text-align: center;
   content: attr(data-content);
@@ -38,15 +38,15 @@ a {
   opacity: 0;
   transition: all 0.5s;
 }
-.animated_link:hover, nav > .nav_middle > a:hover, .button_outline:hover {
+.animated_link:hover, nav .nav_right > a:hover, nav > .nav_middle > a:hover {
   text-shadow: 0 0 1px #00144b;
 }
-.animated_link:hover > span, nav > .nav_middle > a:hover > span, .button_outline:hover > span {
+.animated_link:hover > span, nav .nav_right > a:hover > span, nav > .nav_middle > a:hover > span {
   display: inline-block;
   transform: translateY(-1rem);
   opacity: 0;
 }
-.animated_link:hover::before, nav > .nav_middle > a:hover::before, .button_outline:hover::before {
+.animated_link:hover::before, nav .nav_right > a:hover::before, nav > .nav_middle > a:hover::before {
   transform: translateX(-50%) translateY(0%);
   opacity: 1;
 }
@@ -64,7 +64,7 @@ body {
   width: 100%;
   background: #fbfbfb;
   background: url(/img/bg_zebra.png), linear-gradient(45deg, #fbfbfb 20%, #00c4f2 60%, #004fad 100%);
-  background-size: 100px, auto;
+  background-size: 70px, auto;
   overflow-x: hidden;
 }
 
@@ -95,11 +95,18 @@ main {
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  padding: 1rem;
 }
 main .main_part {
   height: 95vh;
   width: 100%;
+}
+main .main_part#main_part_1::before {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  content: url(/ui/m_p_1.png);
+  position: absolute;
 }
 main .main_part#main_part_1 > .banner {
   position: relative;
@@ -117,8 +124,14 @@ main .main_part#main_part_1 > .banner > h1 {
   font-weight: 900;
 }
 main .main_part#main_part_1 > .banner > a {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 8%;
   transform: scale(1.2);
   padding: 0.8rem 1rem;
+  transition: 0.3s;
+}
+main .main_part#main_part_1 > .banner > a:hover {
+  background-color: #00144b;
+  color: #dedede;
+  width: calc(8% + 2rem);
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */
