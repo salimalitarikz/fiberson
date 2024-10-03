@@ -111,7 +111,7 @@ body {
   min-height: 100%;
   width: 100%;
   background: #fbfbfb;
-  background: url(/img/bg_zebra.png), linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 70%, #00c4f2 80%, #004fad 100%);
+  background: url(/img/bg_zebra.png), linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 70%, #00c4f2 90%, #004fad 100%);
   background-size: 70px, auto;
   overflow-x: hidden;
   position: relative;
@@ -181,11 +181,11 @@ main {
   transform: translate(-50%);
 }
 main .main_part {
-  height: 95vh;
   width: 100%;
 }
 main .main_part#main_part_1 {
   position: relative;
+  height: 100vh;
 }
 main .main_part#main_part_1 .background_image {
   width: 100vw;
@@ -226,7 +226,7 @@ main .main_part#main_part_1 > .banner {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 7rem;
   align-items: center;
 }
 main .main_part#main_part_1 > .banner > h1 {
@@ -255,9 +255,9 @@ main .main_part#main_part_2 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-image: url(/img/bg_zebra.png);
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
+  padding: 5rem 3rem;
 }
 main .main_part#main_part_2 > .banner {
   width: 100%;
@@ -279,20 +279,18 @@ main .main_part#main_part_2 > .banner > h1:nth-child(3) {
 }
 main .main_part#main_part_2 > .part_header {
   width: 100%;
-  padding: 0 3rem;
-  margin-top: 6rem;
+  margin-top: 7rem;
   font-size: 1.5rem;
 }
 main .main_part#main_part_2 > .part_header > p > span {
   font-weight: 600;
 }
 main .main_part#main_part_2 > .part_content {
-  margin-top: 5rem;
-  padding: 0 3rem;
+  margin-top: 7rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
   flex-grow: 1;
 }
 main .main_part#main_part_2 > .part_content > div {
@@ -313,6 +311,29 @@ main .main_part#main_part_2 > .part_content > div:nth-child(2) {
   align-items: flex-end;
   text-align: right;
 }
+@media screen and (min-width: 768px) {
+  main .main_part#main_part_2 {
+    padding: 5rem 5rem;
+  }
+  main .main_part#main_part_2 .part_header {
+    width: 70%;
+  }
+  main .main_part#main_part_2 .part_content > div > p {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .main_part#main_part_2 {
+    padding: 5rem 10rem;
+  }
+  main .main_part#main_part_2 .part_header {
+    width: 55%;
+  }
+  main .main_part#main_part_2 .part_content > div p {
+    width: 40%;
+  }
+}
 main .main_part#main_part_3 {
   background-color: #f6f6f6;
+  height: 90vh;
 }/*# sourceMappingURL=style.css.map */

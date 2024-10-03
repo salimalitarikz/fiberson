@@ -142,7 +142,7 @@ body{
     min-height: 100%;
     width: 100%;
     background: #fbfbfb;
-    background: url(/img/bg_zebra.png), linear-gradient(0deg,#ffffff00 0%, #fbfbfb 70%, #00c4f2 80%, #004fad 100%);
+    background: url(/img/bg_zebra.png), linear-gradient(0deg,#ffffff00 0%, #fbfbfb 70%, #00c4f2 90%, #004fad 100%);
     background-size: 70px,auto;
     overflow-x: hidden;
     position: relative;
@@ -241,12 +241,13 @@ main{
 
     .main_part{
 
-        height: 95vh;
+        // height: 95vh;
         width: 100%;
 
 
         &#main_part_1{
           position: relative;
+          height: 100vh;
 
             .background_image{
                 width: 100vw;
@@ -290,7 +291,7 @@ main{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                gap:4rem;
+                gap:7rem;
                 align-items: center;
 
                 >h1{
@@ -327,9 +328,9 @@ main{
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             background-image: url(/img/bg_zebra.png);
-            padding-top: 5rem;
             display: flex;
             flex-direction: column;
+            padding: 5rem 3rem;
 
             >.banner{
                 width: 100%;
@@ -358,8 +359,7 @@ main{
 
             >.part_header{
                 width: 100%;
-                padding: 0 3rem;
-                margin-top: 6rem;
+                margin-top: 7rem;
                 font-size: 1.5rem;
 
                 >p{
@@ -370,12 +370,12 @@ main{
             }
 
             >.part_content{
-                margin-top: 5rem;
-                padding: 0 3rem;
+                margin-top: 7rem;
+                
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                gap: 3rem;
+                gap: 5rem;
                 flex-grow: 1;
 
                 >div{
@@ -401,11 +401,46 @@ main{
                 }
             }
 
+
+            @media screen and (min-width: 768px) {
+                padding: 5rem 5rem;
+                .part_header{
+                    width: 70%;
+                }
+
+                .part_content{
+                    >div{
+
+                        >p{
+                            width: 45%;
+                        }
+
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                padding: 5rem 10rem;
+                .part_header{
+                    width: 55%;
+                }
+
+                .part_content{
+                    >div{
+                        p{
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+
         }
 
 
         &#main_part_3{
             background-color: $light;
+
+            height: 90vh;
         }
     }
 
