@@ -142,7 +142,7 @@ body{
     min-height: 100%;
     width: 100%;
     background: #fbfbfb;
-    background: url(/img/bg_zebra.png), linear-gradient(35deg,#ffffff00 20%, #fbfbfb 50%, #00c4f2 75%, #004fad 100%);
+    background: url(/img/bg_zebra.png), linear-gradient(0deg,#ffffff00 0%, #fbfbfb 70%, #00c4f2 80%, #004fad 100%);
     background-size: 70px,auto;
     overflow-x: hidden;
     position: relative;
@@ -294,10 +294,11 @@ main{
                 align-items: center;
 
                 >h1{
-                    font-size: 2.5rem;
+                    font-size: 2.8rem;
                     text-align: center;
                     width: 100%;
                     font-weight: 500;
+                    color:$dark;
                 }
 
                 >a{
@@ -305,6 +306,7 @@ main{
                     transform: scale(1.2);
                     padding: .8rem 2.5rem;
                     transition: .3s;
+                    border: 1.5px solid $dark !important;
 
 
                     &:hover{
@@ -338,8 +340,9 @@ main{
                 gap: 1.5rem;            
                 
                 >h1{
-                    font-size: 2.5rem;
+                    font-size: 2.8rem;
                     font-weight: 600;
+                    
 
                     
 
