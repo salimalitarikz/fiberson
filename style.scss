@@ -1,5 +1,5 @@
 // Imports
-// @import url('https://fonts.cdnfonts.com/css/neue-plak');
+@import url('https://fonts.cdnfonts.com/css/neue-plak');
 
 // Roots
 
@@ -117,7 +117,7 @@ button{
     box-sizing: border-box;
     // font-family: 'Neue Plak', sans-serif;
     transition: .2s;
-    font-family:'Neue Plak Regular';
+    font-family: 'Neue Plak', sans-serif;
 }
 
 
@@ -254,7 +254,7 @@ main{
                     font-size: 3rem;
                     text-align: center;
                     width: 100%;
-                    font-family:'Neue Plak Light';
+                    font-weight: 100;
                 }
 
                 >a{

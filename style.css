@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/neue-plak");
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 16px;
@@ -87,7 +88,7 @@ button {
   padding: 0;
   box-sizing: border-box;
   transition: 0.2s;
-  font-family: "Neue Plak Regular";
+  font-family: "Neue Plak", sans-serif;
 }
 
 body {
@@ -189,7 +190,7 @@ main .main_part#main_part_1 > .banner > h1 {
   font-size: 3rem;
   text-align: center;
   width: 100%;
-  font-family: "Neue Plak Light";
+  font-weight: 100;
 }
 main .main_part#main_part_1 > .banner > a {
   width: -webkit-fit-content;
