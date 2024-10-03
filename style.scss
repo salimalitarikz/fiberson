@@ -299,6 +299,80 @@ main{
             background-color: $light;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            background-image: url(/img/bg_zebra.png);
+            padding-top: 5rem;
+            display: flex;
+            flex-direction: column;
+
+            >.banner{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;    
+                gap: 1.5rem;            
+                
+                >h1{
+                    font-size: 2.5rem;
+                    font-weight: 600;
+
+                    
+
+
+                    &:nth-child(2){
+                        opacity: .5;
+                    }
+                    &:nth-child(3){
+                        opacity: .3;
+                    }
+                }
+            }
+
+            >.part_header{
+                width: 100%;
+                padding: 0 3rem;
+                margin-top: 6rem;
+                font-size: 1.5rem;
+
+                >p{
+                    >span{
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            >.part_content{
+                margin-top: 5rem;
+                padding: 0 3rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                flex-grow: 1;
+
+                >div{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1rem;
+
+                    >h2{
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+
+                    >p{
+                        width: 70%;
+                    }
+
+                    &:nth-child(2){
+                        align-items: flex-end;
+                        text-align: right;
+                    }
+                }
+            }
+
         }
     }
 
