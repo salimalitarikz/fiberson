@@ -19,6 +19,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button_outline {
   border: 1px solid #00144b;
   padding: 0.2rem 0.8rem;
@@ -30,6 +39,11 @@ a {
 .button_outline:hover {
   text-shadow: 0 0 1px #00144b;
   box-shadow: 0 0 1px #00144b;
+}
+
+.button_filled {
+  background-color: #00144b;
+  color: #f6f6f6;
 }
 
 .animated_link, nav .nav_right > a, nav > .nav_middle > a {
@@ -121,6 +135,14 @@ nav > .nav_middle {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+}
+nav .nav_right {
+  display: none;
+}
+nav #menu_button {
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  font-size: 1.8rem;
 }
 main {
   width: calc(100% - 2vw);

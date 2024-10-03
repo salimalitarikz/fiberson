@@ -33,6 +33,16 @@ a{
 }
 
 
+button{
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 // General Classes
 
 .button_outline{
@@ -49,6 +59,12 @@ a{
     }
 }
 
+.button_filled{
+    background-color: $dark;
+    color: $light;
+
+    
+}
 
 .animated_link{
             overflow: hidden;
@@ -167,9 +183,17 @@ nav{
     }
 
     .nav_right{
+        display: none;
         >a{
             @extend .animated_link;
         }
+    }
+
+    #menu_button{
+        width: 3.5rem;
+        aspect-ratio: 1/1;
+        
+        font-size: 1.8rem;
     }
 
 
