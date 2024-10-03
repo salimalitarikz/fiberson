@@ -20,7 +20,7 @@ html{
     }
   
     @media only screen and (max-width: 769px) {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
@@ -151,7 +151,7 @@ body{
 
 nav{
     background-color: $light;
-    width: 97%;
+    width: 98%;
     height: 50px;
     position: fixed;
     top: 1rem;
@@ -215,8 +215,19 @@ nav{
     }
 
 
-    @media screen and (min-width: 992px) {
-        
+    @media screen and (min-width: 768px) {
+        .nav_middle{
+            display: flex;
+        }
+        .nav_right{
+            display: flex;
+        }
+
+
+
+        #menu_button{
+            display: none;
+        }
     }
 }
 
@@ -246,6 +257,8 @@ main{
                 bottom: -25%;
                 transform: translateX(-50%);
                 z-index: -1;
+
+                
                
                 >img{
                     width: 100%;
@@ -253,6 +266,18 @@ main{
                     left: 40%;
                     position: relative;
                     transform: translateX(-50%) translateY(50%) scale(2.5);
+
+                    @media only screen and (min-width: 550px) {
+                        transform: translateX(-50%) translateY(15%) scale(1.7) !important;
+                    }
+
+                    @media only screen and (min-width: 850px) {
+                        transform: translateX(-45%) translateY(-10%) scale(1) !important;
+                    }
+
+                    @media only screen and (min-width: 1024px) {
+                        transform: translateX(-45%) translateY(-20%) scale(.8) !important;
+                    }
                 }
 
             }
@@ -265,7 +290,7 @@ main{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                gap:3rem;
+                gap:4rem;
                 align-items: center;
 
                 >h1{
@@ -373,6 +398,11 @@ main{
                 }
             }
 
+        }
+
+
+        &#main_part_3{
+            background-color: $light;
         }
     }
 

@@ -12,7 +12,7 @@
 }
 @media only screen and (max-width: 769px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -119,7 +119,7 @@ body {
 
 nav {
   background-color: #f6f6f6;
-  width: 97%;
+  width: 98%;
   height: 50px;
   position: fixed;
   top: 1rem;
@@ -161,6 +161,18 @@ nav #menu_button {
   aspect-ratio: 1/1;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  nav .nav_middle {
+    display: flex;
+  }
+  nav .nav_right {
+    display: flex;
+  }
+  nav #menu_button {
+    display: none;
+  }
+}
+
 main {
   width: calc(100% - 2vw);
   height: calc(100% - 2vw);
@@ -193,13 +205,28 @@ main .main_part#main_part_1 .background_image > img {
   position: relative;
   transform: translateX(-50%) translateY(50%) scale(2.5);
 }
+@media only screen and (min-width: 550px) {
+  main .main_part#main_part_1 .background_image > img {
+    transform: translateX(-50%) translateY(15%) scale(1.7) !important;
+  }
+}
+@media only screen and (min-width: 850px) {
+  main .main_part#main_part_1 .background_image > img {
+    transform: translateX(-45%) translateY(-10%) scale(1) !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main_part#main_part_1 .background_image > img {
+    transform: translateX(-45%) translateY(-20%) scale(0.8) !important;
+  }
+}
 main .main_part#main_part_1 > .banner {
   position: relative;
   top: 15%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
 }
 main .main_part#main_part_1 > .banner > h1 {
@@ -284,5 +311,8 @@ main .main_part#main_part_2 > .part_content > div > p {
 main .main_part#main_part_2 > .part_content > div:nth-child(2) {
   align-items: flex-end;
   text-align: right;
+}
+main .main_part#main_part_3 {
+  background-color: #f6f6f6;
 }
 /*# sourceMappingURL=style.css.map */
