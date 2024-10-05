@@ -397,9 +397,9 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons {
   gap: 4rem;
 }
 main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
-  border-radius: 8px;
-  width: 4rem;
-  aspect-ratio: 1/1;
+  border-radius: 30px;
+  width: 7rem;
+  padding: 0.2rem 0;
   background-color: #00144b;
   color: #f6f6f6;
   font-size: 40px;
