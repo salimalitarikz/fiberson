@@ -48,7 +48,7 @@ button{
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
     font-style: normal;
-    font-size: 20px !important;   /* Preferred icon size */
+    font-size: 20px ;   /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -208,6 +208,7 @@ nav{
     #menu_button{
         width: 3.5rem;
         aspect-ratio: 1/1;
+        transform: translateX(7px);
         
         font-size: 1rem;
 
@@ -341,7 +342,7 @@ main{
                 gap: 1.5rem;            
                 
                 >h1{
-                    font-size: 2.5rem;
+                    font-size: 2.4rem;
                     font-weight: 600;
                     
 
@@ -439,8 +440,91 @@ main{
 
         &#main_part_3{
             background-color: $light;
+            padding-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10rem;
 
-            height: 90vh;
+            >.part_3_upper{
+                height: 5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 100%;
+
+                >#part_3_line{
+                    font-size: 2.5rem;
+                    font-weight: 200;
+                    height: 5rem;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                >.part_3_names{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+
+                    >h1{
+                        font-size: 1.2rem;
+
+
+                        &:nth-child(2){
+                            font-size: 1.7rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .part_3_lower{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6rem;
+                padding: 3rem;
+
+                .part_3_content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 6rem;
+
+
+                    >div{
+                        width: 60%;
+
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                >.part_3_buttons{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4rem;
+                    >span{
+                        border-radius: 8px;
+                        width: 4rem;
+                        aspect-ratio: 1/1;
+                        background-color: $dark;
+                        color: $light;
+                        font-size: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+
+            }
+
         }
     }
 
