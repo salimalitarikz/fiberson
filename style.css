@@ -271,6 +271,7 @@ main .main_part#main_part_2 > .banner {
 main .main_part#main_part_2 > .banner > h1 {
   font-size: 2.4rem;
   font-weight: 600;
+  text-align: center;
 }
 main .main_part#main_part_2 > .banner > h1:nth-child(2) {
   opacity: 0.5;
