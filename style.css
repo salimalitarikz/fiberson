@@ -124,7 +124,6 @@ body {
   background-size: 70px, auto;
   overflow-x: hidden;
   position: relative;
-  padding-bottom: 10rem;
 }
 
 nav {
@@ -524,7 +523,7 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group {
 }
 main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group > input, main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group textarea {
   width: 100%;
-  padding: 0.8rem 0.5rem;
+  padding: 1rem 1rem;
   border: 1px solid #00144b;
   font-size: 1.2rem;
   border-radius: 8px;
@@ -550,4 +549,74 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_button {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+main .main_part#main_part_6 {
+  background-color: #000 !important;
+  height: 100vh;
+  width: 100vw !important;
+  position: relative;
+  left: -1vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .main_part#main_part_6 * {
+  color: #fcfcfc;
+}
+main .main_part#main_part_6 > .part_6_header {
+  width: 100%;
+  padding-top: 7rem;
+}
+main .main_part#main_part_6 > .part_6_header > h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fcfcfc;
+  width: 100%;
+  text-align: center;
+}
+main .main_part#main_part_6 > .part_6_logo {
+  margin-top: 2rem;
+  width: 80%;
+  aspect-ratio: 1/1;
+  border: 1px solid #fff;
+}
+main .main_part#main_part_6 > .part_6_lower {
+  padding: 1rem 1rem;
+  padding-top: 3rem;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .main_part#main_part_6 > .part_6_lower > .part_6_links {
+  width: 100%;
+  position: relative;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main_part#main_part_6 > .part_6_lower > .part_6_links > div {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 1rem;
+}
+main .main_part#main_part_6 > .part_6_lower > .part_6_links > .part_6_line {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #fcfcfc;
+  height: 2px;
+}
+main .main_part#main_part_6 > .part_6_lower > .part_6_copyright {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+main .main_part#main_part_6 > .part_6_lower > .part_6_copyright > span > a {
+  color: #ff3c00;
 }/*# sourceMappingURL=style.css.map */

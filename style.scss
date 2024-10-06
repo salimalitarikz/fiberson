@@ -154,7 +154,6 @@ body{
     background-size: 70px,auto;
     overflow-x: hidden;
     position: relative;
-    padding-bottom: 10rem;
 }
 
 
@@ -667,7 +666,7 @@ main{
                         
                         >input,textarea{
                             width: 100%;
-                            padding: .8rem .5rem;
+                            padding: 1rem 1rem;
                             border: 1px solid $dark;
                             font-size: 1.2rem;
                             border-radius: 8px;
@@ -708,6 +707,103 @@ main{
 
                 }
             }
+
+        }
+
+
+        &#main_part_6{
+
+            background-color: #000 !important;
+            height: 100vh;
+            width: 100vw !important;
+            position: relative;
+            left: -1vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            *{
+                color: $light;
+            }
+
+            >.part_6_header{
+                width: 100%;
+                padding-top: 7rem;
+                
+                >h1{
+                    font-size: 4rem;
+                    font-weight: 500;
+                    color: $light;
+
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+
+
+            >.part_6_logo{
+                margin-top: 2rem;
+                width: 80%;
+                aspect-ratio: 1/1;
+                border: 1px solid #fff;
+
+            }
+
+            >.part_6_lower{
+                padding: 1rem 1rem;
+                padding-top: 3rem;
+                width: 100%;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+
+
+                >.part_6_links{
+                    width: 100%;
+                    position: relative;
+                    padding-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    >div{
+                        font-size: .8rem;
+                        display: flex;
+                        gap: 1rem;
+                    }
+
+
+                    >.part_6_line{
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        background-color: $light;
+                        height: 2px;
+                    }
+                }
+
+
+                >.part_6_copyright{
+                    width: 100%;
+                    display: flex;
+                    flex-grow: 1;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    
+
+                    >span{
+
+
+                        >a{
+                            color: #ff3c00;
+                        }
+                    }
+                }
+            }
+
 
         }
     }
