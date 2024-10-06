@@ -258,6 +258,7 @@ main{
         &#main_part_1{
           position: relative;
           height: 100vh;
+          background-color: transparent !important;
 
             .background_image{
                 width: 100vw;
@@ -682,7 +683,7 @@ main{
                             content: attr(data-label);
                             position: absolute;
                             left: .5rem;
-                            top: -.5rem;
+                            top: -.7rem;
                             background-color: $light;
                             color: $dark;
                             z-index: 3;
@@ -695,9 +696,13 @@ main{
 
                     >.form_button{
                         background-color: $dark;
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         color: $light;
-                        padding: .7rem 1rem ;
+                        padding: .7rem 1.5rem ;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
                     }
                     
 

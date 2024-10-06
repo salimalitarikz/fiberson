@@ -198,6 +198,7 @@ main .main_part {
 main .main_part#main_part_1 {
   position: relative;
   height: 100vh;
+  background-color: transparent !important;
 }
 main .main_part#main_part_1 .background_image {
   width: 100vw;
@@ -534,7 +535,7 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group::after 
   content: attr(data-label);
   position: absolute;
   left: 0.5rem;
-  top: -0.5rem;
+  top: -0.7rem;
   background-color: #fcfcfc;
   color: #00144b;
   z-index: 3;
@@ -542,7 +543,11 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group::after 
 }
 main .main_part#main_part_5 .part_5_content > .part_5_form > .form_button {
   background-color: #00144b;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fcfcfc;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }/*# sourceMappingURL=style.css.map */
