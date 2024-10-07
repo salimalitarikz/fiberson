@@ -354,10 +354,26 @@ main{
         width: 100%;
 
 
+        &:nth-child(odd){
+            background: #ffffff;
+            background: -webkit-linear-gradient(0deg, #ffffff 0%, #7be5ff 100%);
+            background: linear-gradient(0deg, #ffffff 70%, #7be5ff 100%);
+            
+        }
+
+        &:nth-child(even){
+            background: #7be5ff;
+            background: -webkit-linear-gradient(0deg, #7be5ff 0%, #ffffff 100%);
+            background: linear-gradient(0deg, #7be5ff 0%, #ffffff 100%);
+        }
+
+
+
         &#main_part_1{
           position: relative;
           height: 100vh;
           background-color: transparent !important;
+          background: unset !important;
 
          >*{
             opacity: 0;
@@ -369,7 +385,7 @@ main{
                 overflow: hidden;
                 position: absolute;
                 left: 50%;
-                bottom: -25%;
+                bottom: -32%;
                 transform: translateX(-50%);
                 z-index: -1;
                 opacity: 1;
@@ -403,16 +419,24 @@ main{
                     left: 40%;
                     position: relative;
                     transform: translateX(-50%) translateY(50%) scale(2);
+                   
 
                     // Svg Animation
                     stroke-dasharray: 1000;
                     stroke-dashoffset: 1000;
                     pointer-events: none;
-                    animation: animateDash 3s linear forwards;
-                    
+                    animation: animateDash 4s linear forwards;
                     @keyframes animateDash {
                         to {
                           stroke-dashoffset: 0;
+                        }
+                      }
+
+                      @keyframes animateDashReverse {
+                        0% {
+                          stroke-dashoffset: 0;
+                        }100%{
+                            stroke-dashoffset: 1000;
                         }
                       }
 
@@ -588,7 +612,7 @@ main{
                     animation: banner_late 1s forwards;
                     opacity: 0;
                     transform: translateY(1rem);
-                    animation-delay: 3s;
+                    animation-delay: 2s;
     
                     @keyframes banner_late {
                         to{
@@ -612,7 +636,7 @@ main{
                      animation: banner_late 1s forwards;
                      opacity: 0;
                      transform: translateY(1rem);
-                     animation-delay: 3.5s;
+                     animation-delay: 2.5s;
      
                      @keyframes banner_late {
                          to{
@@ -1046,6 +1070,7 @@ main{
         &#main_part_6{
 
             background-color: #000 !important;
+            background: unset;
             height: 100vh;
             width: 100vw !important;
             position: relative;

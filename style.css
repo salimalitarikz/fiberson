@@ -272,10 +272,19 @@ main .main_part {
   background-color: #fcfcfc;
   width: 100%;
 }
+main .main_part:nth-child(odd) {
+  background: #ffffff;
+  background: linear-gradient(0deg, #ffffff 70%, #7be5ff 100%);
+}
+main .main_part:nth-child(even) {
+  background: #7be5ff;
+  background: linear-gradient(0deg, #7be5ff 0%, #ffffff 100%);
+}
 main .main_part#main_part_1 {
   position: relative;
   height: 100vh;
   background-color: transparent !important;
+  background: unset !important;
 }
 main .main_part#main_part_1 > * {
   opacity: 0;
@@ -286,7 +295,7 @@ main .main_part#main_part_1 .background_image {
   overflow: hidden;
   position: absolute;
   left: 50%;
-  bottom: -25%;
+  bottom: -32%;
   transform: translateX(-50%);
   z-index: -1;
   opacity: 1;
@@ -324,11 +333,19 @@ main .main_part#main_part_1 .background_image > svg {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   pointer-events: none;
-  animation: animateDash 3s linear forwards;
+  animation: animateDash 4s linear forwards;
 }
 @keyframes animateDash {
   to {
     stroke-dashoffset: 0;
+  }
+}
+@keyframes animateDashReverse {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -480,7 +497,7 @@ main .main_part#main_part_1 > .banner > h1 {
   animation: banner_late 1s forwards;
   opacity: 0;
   transform: translateY(1rem);
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 @keyframes banner_late {
   to {
@@ -501,7 +518,7 @@ main .main_part#main_part_1 > .banner > a {
   animation: banner_late 1s forwards;
   opacity: 0;
   transform: translateY(1rem);
-  animation-delay: 3.5s;
+  animation-delay: 2.5s;
 }
 @keyframes banner_late {
   to {
@@ -827,6 +844,7 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_button {
 }
 main .main_part#main_part_6 {
   background-color: #000 !important;
+  background: unset;
   height: 100vh;
   width: 100vw !important;
   position: relative;
