@@ -129,7 +129,7 @@ body {
 nav {
   background-color: #fcfcfc;
   width: 98%;
-  height: 50px;
+  height: 45px;
   position: fixed;
   top: 1rem;
   left: 50%;
@@ -168,8 +168,76 @@ nav .nav_right {
 nav #menu_button {
   width: 3.5rem;
   aspect-ratio: 1/1;
-  transform: translateX(7px);
+  transform: translateX(10px);
   font-size: 1rem;
+}
+nav > menu {
+  width: 100%;
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50px;
+  border-radius: 8px;
+  left: 0;
+  padding: 1rem;
+  overflow: hidden;
+  transition: 0.5s;
+  transform: translateY(1rem) rotate(-2deg);
+  opacity: 0;
+  display: none;
+}
+nav > menu.opened_menu {
+  display: block;
+  animation: menu_open 0.5s forwards;
+}
+@keyframes menu_open {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) rotate(-2deg);
+  }
+  to {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+nav > menu > .menu_decoration {
+  width: 35%;
+  position: absolute;
+  right: 0rem;
+  top: -3rem;
+  transform: rotate(-135deg);
+}
+nav > menu > .menu_decoration > svg .cls-1 {
+  fill: none;
+  stroke: #001b8e;
+  stroke-miterlimit: 10;
+  stroke-width: 0.75px;
+}
+nav > menu > .menu_upper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+nav > menu > .menu_upper > a {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+nav > menu > .menu_lower {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+nav > menu > .menu_lower > .menu_line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1.2px;
+  top: -0.5rem;
+  background-color: #00144b;
 }
 @media screen and (min-width: 768px) {
   nav .nav_middle {
@@ -231,6 +299,153 @@ main .main_part#main_part_1 .background_image > img {
   main .main_part#main_part_1 .background_image > img {
     transform: translateX(-45%) translateY(-20%) scale(0.8) !important;
   }
+}
+main .main_part#main_part_1 .background_image > svg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 40%;
+  position: relative;
+  transform: translateX(-50%) translateY(50%) scale(2.5);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  pointer-events: none;
+  animation: animateDash 2s linear forwards;
+}
+@keyframes animateDash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media only screen and (min-width: 550px) {
+  main .main_part#main_part_1 .background_image > svg {
+    transform: translateX(-50%) translateY(15%) scale(1.7) !important;
+  }
+}
+@media only screen and (min-width: 850px) {
+  main .main_part#main_part_1 .background_image > svg {
+    transform: translateX(-45%) translateY(-10%) scale(1) !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main_part#main_part_1 .background_image > svg {
+    transform: translateX(-45%) translateY(-20%) scale(0.8) !important;
+  }
+}
+main .main_part#main_part_1 .background_image > svg .cls-1 {
+  opacity: 0.4;
+}
+main .main_part#main_part_1 .background_image > svg .cls-1, main .main_part#main_part_1 .background_image > svg .cls-2, main .main_part#main_part_1 .background_image > svg .cls-3, main .main_part#main_part_1 .background_image > svg .cls-4, main .main_part#main_part_1 .background_image > svg .cls-5, main .main_part#main_part_1 .background_image > svg .cls-6, main .main_part#main_part_1 .background_image > svg .cls-7, main .main_part#main_part_1 .background_image > svg .cls-8, main .main_part#main_part_1 .background_image > svg .cls-9, main .main_part#main_part_1 .background_image > svg .cls-10, main .main_part#main_part_1 .background_image > svg .cls-11, main .main_part#main_part_1 .background_image > svg .cls-12, main .main_part#main_part_1 .background_image > svg .cls-13, main .main_part#main_part_1 .background_image > svg .cls-14, main .main_part#main_part_1 .background_image > svg .cls-15, main .main_part#main_part_1 .background_image > svg .cls-16, main .main_part#main_part_1 .background_image > svg .cls-17, main .main_part#main_part_1 .background_image > svg .cls-18, main .main_part#main_part_1 .background_image > svg .cls-19, main .main_part#main_part_1 .background_image > svg .cls-20 {
+  fill: none;
+  stroke: #000367;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+}
+main .main_part#main_part_1 .background_image > svg .cls-21 {
+  -webkit-clip-path: url(#clippath-6);
+          clip-path: url(#clippath-6);
+}
+main .main_part#main_part_1 .background_image > svg .cls-22 {
+  -webkit-clip-path: url(#clippath-7);
+          clip-path: url(#clippath-7);
+}
+main .main_part#main_part_1 .background_image > svg .cls-23 {
+  -webkit-clip-path: url(#clippath-15);
+          clip-path: url(#clippath-15);
+}
+main .main_part#main_part_1 .background_image > svg .cls-24 {
+  -webkit-clip-path: url(#clippath-4);
+          clip-path: url(#clippath-4);
+}
+main .main_part#main_part_1 .background_image > svg .cls-2 {
+  opacity: 0.9;
+}
+main .main_part#main_part_1 .background_image > svg .cls-2, main .main_part#main_part_1 .background_image > svg .cls-5, main .main_part#main_part_1 .background_image > svg .cls-9, main .main_part#main_part_1 .background_image > svg .cls-15, main .main_part#main_part_1 .background_image > svg .cls-16, main .main_part#main_part_1 .background_image > svg .cls-17 {
+  mix-blend-mode: multiply;
+}
+main .main_part#main_part_1 .background_image > svg .cls-3, main .main_part#main_part_1 .background_image > svg .cls-25, main .main_part#main_part_1 .background_image > svg .cls-18 {
+  opacity: 0.3;
+}
+main .main_part#main_part_1 .background_image > svg .cls-3, main .main_part#main_part_1 .background_image > svg .cls-10, main .main_part#main_part_1 .background_image > svg .cls-11, main .main_part#main_part_1 .background_image > svg .cls-12, main .main_part#main_part_1 .background_image > svg .cls-26, main .main_part#main_part_1 .background_image > svg .cls-19 {
+  mix-blend-mode: screen;
+}
+main .main_part#main_part_1 .background_image > svg .cls-4 {
+  opacity: 0.08;
+}
+main .main_part#main_part_1 .background_image > svg .cls-27 {
+  -webkit-clip-path: url(#clippath-9);
+          clip-path: url(#clippath-9);
+}
+main .main_part#main_part_1 .background_image > svg .cls-28 {
+  -webkit-clip-path: url(#clippath-10);
+          clip-path: url(#clippath-10);
+}
+main .main_part#main_part_1 .background_image > svg .cls-29 {
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}
+main .main_part#main_part_1 .background_image > svg .cls-5, main .main_part#main_part_1 .background_image > svg .cls-14 {
+  opacity: 0.8;
+}
+main .main_part#main_part_1 .background_image > svg .cls-6, main .main_part#main_part_1 .background_image > svg .cls-11, main .main_part#main_part_1 .background_image > svg .cls-15 {
+  opacity: 0.5;
+}
+main .main_part#main_part_1 .background_image > svg .cls-30 {
+  -webkit-clip-path: url(#clippath-11);
+          clip-path: url(#clippath-11);
+}
+main .main_part#main_part_1 .background_image > svg .cls-7 {
+  opacity: 0.1;
+}
+main .main_part#main_part_1 .background_image > svg .cls-9, main .main_part#main_part_1 .background_image > svg .cls-31, main .main_part#main_part_1 .background_image > svg .cls-20 {
+  opacity: 0.7;
+}
+main .main_part#main_part_1 .background_image > svg .cls-32 {
+  -webkit-clip-path: url(#clippath-1);
+          clip-path: url(#clippath-1);
+}
+main .main_part#main_part_1 .background_image > svg .cls-33 {
+  isolation: isolate;
+}
+main .main_part#main_part_1 .background_image > svg .cls-34 {
+  -webkit-clip-path: url(#clippath-5);
+          clip-path: url(#clippath-5);
+}
+main .main_part#main_part_1 .background_image > svg .cls-35 {
+  -webkit-clip-path: url(#clippath-8);
+          clip-path: url(#clippath-8);
+}
+main .main_part#main_part_1 .background_image > svg .cls-36 {
+  opacity: 0.91;
+}
+main .main_part#main_part_1 .background_image > svg .cls-12, main .main_part#main_part_1 .background_image > svg .cls-26, main .main_part#main_part_1 .background_image > svg .cls-13, main .main_part#main_part_1 .background_image > svg .cls-17 {
+  opacity: 0.6;
+}
+main .main_part#main_part_1 .background_image > svg .cls-37 {
+  -webkit-clip-path: url(#clippath-3);
+          clip-path: url(#clippath-3);
+}
+main .main_part#main_part_1 .background_image > svg .cls-38 {
+  -webkit-clip-path: url(#clippath-12);
+          clip-path: url(#clippath-12);
+}
+main .main_part#main_part_1 .background_image > svg .cls-39 {
+  -webkit-clip-path: url(#clippath-14);
+          clip-path: url(#clippath-14);
+}
+main .main_part#main_part_1 .background_image > svg .cls-16, main .main_part#main_part_1 .background_image > svg .cls-19 {
+  opacity: 0.2;
+}
+main .main_part#main_part_1 .background_image > svg .cls-40 {
+  -webkit-clip-path: url(#clippath-2);
+          clip-path: url(#clippath-2);
+}
+main .main_part#main_part_1 .background_image > svg .cls-41 {
+  -webkit-clip-path: url(#clippath-13);
+          clip-path: url(#clippath-13);
+}
+main .main_part#main_part_1 .background_image > svg .cls-42 {
+  fill: url(#linear-gradient);
 }
 main .main_part#main_part_1 > .banner {
   position: relative;

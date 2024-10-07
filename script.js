@@ -1,13 +1,7 @@
 
-var el_list = document.querySelectorAll('.unscrollable'); // returns NodeList
-var el_array = [...el_list]; // converts NodeList to Array
-el_array.forEach(el => {
 
-el.addEventListener('wheel', function(e) {
-    e.preventDefault();
-  });
-
+var menu_button = document.getElementById("menu_button");
+var menu = document.getElementById("menu");
+menu_button.addEventListener("click", function(){
+    menu.classList.toggle("opened_menu");
 });
-
-
-
