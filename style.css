@@ -324,6 +324,7 @@ main .main_part#main_part_1 .background_image > svg {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   pointer-events: none;
+  animation-delay: 3s !important;
   animation: animateDash 3s linear forwards;
 }
 @keyframes animateDash {
