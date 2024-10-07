@@ -54,7 +54,7 @@ button {
 }
 
 .button_outline {
-  border: 1px solid #00144b;
+  border: 1px solid #03003e;
   padding: 0.2rem 0.8rem;
   border-radius: 5px;
   display: flex;
@@ -62,12 +62,12 @@ button {
   justify-content: center;
 }
 .button_outline:hover {
-  text-shadow: 0 0 1px #00144b;
-  box-shadow: 0 0 1px #00144b;
+  text-shadow: 0 0 1px #03003e;
+  box-shadow: 0 0 1px #03003e;
 }
 
 .button_filled {
-  background-color: #00144b;
+  background-color: #03003e;
   color: #fcfcfc;
 }
 
@@ -95,7 +95,7 @@ button {
   transition: all 0.5s;
 }
 .animated_link:hover, nav .nav_right > a:hover, nav > .nav_middle > a:hover {
-  text-shadow: 0 0 1px #00144b;
+  text-shadow: 0 0 1px #03003e;
 }
 .animated_link:hover > span, nav .nav_right > a:hover > span, nav > .nav_middle > a:hover > span {
   display: inline-block;
@@ -247,7 +247,7 @@ nav > menu > .menu_lower > .menu_line {
   width: 100%;
   height: 1.2px;
   top: -0.5rem;
-  background-color: #00144b;
+  background-color: #03003e;
 }
 @media screen and (min-width: 768px) {
   nav .nav_middle {
@@ -476,7 +476,7 @@ main .main_part#main_part_1 > .banner > h1 {
   text-align: center;
   width: 100%;
   font-weight: 500;
-  color: #00144b;
+  color: #03003e;
   animation: banner_late 1s forwards;
   opacity: 0;
   transform: translateY(1rem);
@@ -494,7 +494,7 @@ main .main_part#main_part_1 > .banner > a {
   transform: scale(1.2);
   padding: 0.8rem 2.5rem;
   transition: 0.3s;
-  border: 1.5px solid #00144b !important;
+  border: 1.5px solid #03003e !important;
   opacity: 0;
   animation: banner_late 1s forwards;
   opacity: 0;
@@ -508,7 +508,7 @@ main .main_part#main_part_1 > .banner > a {
   }
 }
 main .main_part#main_part_1 > .banner > a:hover {
-  background-color: #00144b;
+  background-color: #03003e;
   color: #fcfcfc;
   border-radius: 30px;
   padding: 0.8rem 3.5rem;
@@ -663,7 +663,7 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
   border-radius: 30px;
   width: 7rem;
   padding: 0.2rem 0;
-  background-color: #00144b;
+  background-color: #000dff;
   color: #fcfcfc;
   font-size: 40px;
   display: flex;
@@ -797,7 +797,7 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group {
 main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group > input, main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group textarea {
   width: 100%;
   padding: 1rem 1rem;
-  border: 1px solid #00144b;
+  border: 1px solid #03003e;
   font-size: 1.2rem;
   border-radius: 8px;
   background-color: transparent;
@@ -809,12 +809,12 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group::after 
   left: 0.5rem;
   top: -0.7rem;
   background-color: #fcfcfc;
-  color: #00144b;
+  color: #03003e;
   z-index: 3;
   padding: 0 0.5rem;
 }
 main .main_part#main_part_5 .part_5_content > .part_5_form > .form_button {
-  background-color: #00144b;
+  background-color: #000dff;
   font-size: 1.2rem;
   color: #fcfcfc;
   padding: 0.7rem 1.5rem;

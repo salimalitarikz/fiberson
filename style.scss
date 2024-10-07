@@ -6,7 +6,8 @@
 $primary:#00C4F2;
 $secondary:#004FAD;
 $tertiary:#94D6EA;
-$dark:#00144b;
+$dark:#03003e;
+$accent:#000dff;
 $light:#fcfcfc;
 
 
@@ -820,7 +821,7 @@ main{
                         border-radius: 30px;
                         width: 7rem;
                         padding: .2rem 0;
-                        background-color: $dark;
+                        background-color: $accent;
                         color: $light;
                         font-size: 40px;
                         display: flex;
@@ -1022,7 +1023,7 @@ main{
                     }
 
                     >.form_button{
-                        background-color: $dark;
+                        background-color: $accent;
                         font-size: 1.2rem;
                         color: $light;
                         padding: .7rem 1.5rem ;
