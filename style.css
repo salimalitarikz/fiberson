@@ -475,7 +475,7 @@ main .main_part#main_part_1 > .banner > h1 {
   font-size: 2.8rem;
   text-align: center;
   width: 100%;
-  font-weight: 500;
+  font-weight: 600;
   color: #03003e;
   animation: banner_late 1s forwards;
   opacity: 0;
@@ -494,8 +494,10 @@ main .main_part#main_part_1 > .banner > a {
   transform: scale(1.2);
   padding: 0.8rem 2.5rem;
   transition: 0.3s;
-  border: 1.5px solid #03003e !important;
+  border: 1px solid rgba(0, 13, 255, 0.4392156863);
+  background-color: #fcfcfc;
   opacity: 0;
+  border-radius: 10px;
   animation: banner_late 1s forwards;
   opacity: 0;
   transform: translateY(1rem);
