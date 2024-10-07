@@ -353,7 +353,7 @@ main .main_part#main_part_1 .background_image > svg .cls-1, main .main_part#main
   fill: none;
   stroke: #000367;
   stroke-miterlimit: 50;
-  stroke-width: 5px;
+  stroke-width: 3px;
 }
 main .main_part#main_part_1 .background_image > svg .cls-21 {
   -webkit-clip-path: url(#clippath-6);
