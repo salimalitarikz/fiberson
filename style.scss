@@ -173,6 +173,20 @@ nav{
     justify-content: space-between;
     padding: 0 1rem;
     z-index: 2;
+
+    
+                    // Animation
+                    animation: nav_late .7s forwards;
+                    opacity: 0;
+                    transform: translateY(-2rem) translateX(-50%);
+                    animation-delay: 2.3s;
+    
+                    @keyframes nav_late {
+                        to{
+                            opacity: 1;
+                            transform: translateY(0) translateX(-50%);
+                        }
+                    }
     
 
     >.nav_left{
