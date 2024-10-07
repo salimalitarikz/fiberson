@@ -120,7 +120,7 @@ body {
   min-height: 100%;
   width: 100%;
   background: #fbfbfb;
-  background: url(/img/bg_zebra.png), linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 70%, #00c4f2 90%, #0073ff 100%);
+  background: url(/img/bg_zebra.png), linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 86%, #00c4f2 95%, #00c4f2 100%);
   background-size: 70px, auto;
   overflow-x: hidden;
   position: relative;
@@ -320,11 +320,10 @@ main .main_part#main_part_1 .background_image > svg {
      object-fit: cover;
   left: 40%;
   position: relative;
-  transform: translateX(-50%) translateY(50%) scale(2.5);
+  transform: translateX(-50%) translateY(50%) scale(2);
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   pointer-events: none;
-  animation-delay: 3s !important;
   animation: animateDash 3s linear forwards;
 }
 @keyframes animateDash {
