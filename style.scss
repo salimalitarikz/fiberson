@@ -625,10 +625,11 @@ main{
                 >a{
                     width: fit-content;
                     transform: scale(1.2);
-                    padding: .8rem 2.5rem;
+                    padding: .8rem 4rem;
                     transition: .3s;
                     border: 1px solid #000dff70;
                     background-color: $light;
+                    box-shadow: 1px 1px  $dark;
                     opacity: 0;
                     border-radius: 10px;
                     

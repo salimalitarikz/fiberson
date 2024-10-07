@@ -509,10 +509,11 @@ main .main_part#main_part_1 > .banner > a {
   width: -moz-fit-content;
   width: fit-content;
   transform: scale(1.2);
-  padding: 0.8rem 2.5rem;
+  padding: 0.8rem 4rem;
   transition: 0.3s;
   border: 1px solid rgba(0, 13, 255, 0.4392156863);
   background-color: #fcfcfc;
+  box-shadow: 1px 1px #03003e;
   opacity: 0;
   border-radius: 10px;
   animation: banner_late 1s forwards;
