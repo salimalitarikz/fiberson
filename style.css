@@ -352,8 +352,8 @@ main .main_part#main_part_1 .background_image > svg .cls-1 {
 main .main_part#main_part_1 .background_image > svg .cls-1, main .main_part#main_part_1 .background_image > svg .cls-2, main .main_part#main_part_1 .background_image > svg .cls-3, main .main_part#main_part_1 .background_image > svg .cls-4, main .main_part#main_part_1 .background_image > svg .cls-5, main .main_part#main_part_1 .background_image > svg .cls-6, main .main_part#main_part_1 .background_image > svg .cls-7, main .main_part#main_part_1 .background_image > svg .cls-8, main .main_part#main_part_1 .background_image > svg .cls-9, main .main_part#main_part_1 .background_image > svg .cls-10, main .main_part#main_part_1 .background_image > svg .cls-11, main .main_part#main_part_1 .background_image > svg .cls-12, main .main_part#main_part_1 .background_image > svg .cls-13, main .main_part#main_part_1 .background_image > svg .cls-14, main .main_part#main_part_1 .background_image > svg .cls-15, main .main_part#main_part_1 .background_image > svg .cls-16, main .main_part#main_part_1 .background_image > svg .cls-17, main .main_part#main_part_1 .background_image > svg .cls-18, main .main_part#main_part_1 .background_image > svg .cls-19, main .main_part#main_part_1 .background_image > svg .cls-20 {
   fill: none;
   stroke: #000367;
-  stroke-miterlimit: 10;
-  stroke-width: 1px;
+  stroke-miterlimit: 50;
+  stroke-width: 5px;
 }
 main .main_part#main_part_1 .background_image > svg .cls-21 {
   -webkit-clip-path: url(#clippath-6);
