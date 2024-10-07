@@ -267,6 +267,9 @@ main .main_part#main_part_1 {
   height: 100vh;
   background-color: transparent !important;
 }
+main .main_part#main_part_1 > * {
+  opacity: 0;
+}
 main .main_part#main_part_1 .background_image {
   width: 100vw;
   height: 100vh;
@@ -276,6 +279,7 @@ main .main_part#main_part_1 .background_image {
   bottom: -25%;
   transform: translateX(-50%);
   z-index: -1;
+  opacity: 1;
 }
 main .main_part#main_part_1 .background_image > img {
   width: 100%;
@@ -310,7 +314,7 @@ main .main_part#main_part_1 .background_image > svg {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   pointer-events: none;
-  animation: animateDash 2s linear forwards;
+  animation: animateDash 3s linear forwards;
 }
 @keyframes animateDash {
   to {
@@ -455,6 +459,7 @@ main .main_part#main_part_1 > .banner {
   flex-direction: column;
   gap: 7rem;
   align-items: center;
+  opacity: 1;
 }
 main .main_part#main_part_1 > .banner > h1 {
   font-size: 2.8rem;
@@ -462,6 +467,16 @@ main .main_part#main_part_1 > .banner > h1 {
   width: 100%;
   font-weight: 500;
   color: #00144b;
+  animation: banner_late 1s forwards;
+  opacity: 0;
+  transform: translateY(1rem);
+  animation-delay: 3s;
+}
+@keyframes banner_late {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 main .main_part#main_part_1 > .banner > a {
   width: -moz-fit-content;
@@ -470,6 +485,17 @@ main .main_part#main_part_1 > .banner > a {
   padding: 0.8rem 2.5rem;
   transition: 0.3s;
   border: 1.5px solid #00144b !important;
+  opacity: 0;
+  animation: banner_late 1s forwards;
+  opacity: 0;
+  transform: translateY(1rem);
+  animation-delay: 3.5s;
+}
+@keyframes banner_late {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 main .main_part#main_part_1 > .banner > a:hover {
   background-color: #00144b;
