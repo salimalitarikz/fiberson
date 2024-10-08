@@ -12,13 +12,41 @@
 
   <section id="request_project">
 
-    <div class="request_part_bar">
 
-    </div>
+    <button class="close_circle" onclick="request_project()">
+      <span class="material-symbols-outlined">
+        close
+        </span>
+    </button>
 
 
     <h1>Kaliteli bir iş mi ? <br> <span> Başvurun,</span> <br> beraber başaralım</h1>
 
+
+    <form action="#">
+      <div class="req_form_group"  data-label="İsminiz">
+        <input type="text" name="" id="">
+      </div>
+      <div class="req_form_group"  data-label="Telefon Numaranız">
+        <input type="text" name="" id="">
+      </div>
+      <div class="req_form_group"  data-label="Mail Adresiniz">
+        <input type="text" name="" id="">
+      </div>
+      <div class="req_form_group" data-label="Proje Detayları">
+        <textarea rows="9" name="" id=""></textarea>
+      </div>
+
+
+      <button>Başvur</button>
+
+
+    </form>
+
+    <div class="request_part_bar">
+      <div class="req_bar_left">Fiberson</div>
+      <div class="req_bar_right">Profesyonel Elektrik &<br> Fiber Çözüm Servisi</div>
+    </div>
 
   </section>
 
@@ -315,7 +343,7 @@
           
           <div class="banner">
             <h1>Sürdürülebilir <br> Projeler Yapmaya <br> Hazır mısınız ?</h1>
-            <a href="#teklif" class="button_outline">Proje Teklif Et</a>
+            <button onclick="request_project()" class="button_outline">Proje Teklif Et</button>
           </div>
     </section>
 
