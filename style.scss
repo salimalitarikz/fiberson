@@ -17,6 +17,14 @@ $accent:#000dff;
 $light:#fcfcfc;
 
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
 html{
     @media only screen and (max-width: 1200px) {
         font-size: 16px;
@@ -377,12 +385,19 @@ nav{
     }
 
     #menu_button{
-        width: 3.5rem;
+        width: 3rem;
         aspect-ratio: 1/1;
-        transform: translateX(10px);
+        background-color: transparent !important;
+        font-size: 2rem;
+        >span{
+            font-size: 3rem;
+            color: $dark;
+            
+        }
         
-        font-size: 1rem;
+        
 
+        
        
     }
 
