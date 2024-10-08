@@ -150,12 +150,12 @@ body {
 }
 #request_project > .close_circle {
   position: absolute;
-  top: 5.6rem;
+  top: 3rem;
   right: 2rem;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
-  background-color: #000dff;
+  border-radius: 10px;
+  background-color: #03003e;
   align-items: center;
   justify-content: center;
 }
@@ -165,7 +165,6 @@ body {
 }
 #request_project.opened_req_proj {
   display: flex;
-  transform: translateX(50%);
   animation: open_request_page 0.3s linear forwards;
 }
 @keyframes open_request_page {
@@ -180,11 +179,10 @@ body {
   100% {
     display: flex;
     opacity: 1;
-    transform: translateX(0);
   }
 }
 #request_project > h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 #request_project > h1 > span {
@@ -193,7 +191,7 @@ body {
   font-weight: 700;
 }
 #request_project > form {
-  background-color: #000dff;
+  background-color: #03003e;
   width: 98%;
   position: relative;
   left: 50%;

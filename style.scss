@@ -193,12 +193,12 @@ body{
 
     >.close_circle{
         position: absolute;
-        top: 5.6rem;
+        top: 3rem;
         right: 2rem;
         width: 4rem;
         height: 4rem;
-        border-radius: 50%;
-        background-color: $accent;
+        border-radius: 10px;
+        background-color: $dark;
         align-items: center;
         justify-content: center;
         
@@ -212,7 +212,6 @@ body{
 
     &.opened_req_proj{
         display: flex;
-        transform: translateX(50%);
 
         animation: open_request_page .3s linear forwards;
 
@@ -229,13 +228,12 @@ body{
             100%{
                 display: flex;
                 opacity: 1;
-                transform: translateX(0);
             }
         }
     }
 
     >h1{
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 500;
 
         >span{
@@ -247,7 +245,7 @@ body{
 
 
     >form{
-        background-color: $accent;
+        background-color: $dark;
         width: 98%;
         position: relative;
         left: 50%;
