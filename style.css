@@ -295,42 +295,30 @@ nav #menu_button {
   width: 3rem;
   aspect-ratio: 1/1;
   background-color: transparent !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 0.3rem;
+  position: relative;
+}
+nav #menu_button > ion-icon {
+  color: #03003e;
+  font-size: 3rem;
+  position: absolute;
+  --ionicon-stroke-width: 21.5px;
+}
+nav #menu_button > ion-icon:nth-child(2) {
+  opacity: 0;
 }
 nav #menu_button > span {
   width: 90%;
-  height: 3.2px;
+  height: 2.5px;
   background-color: #03003e;
   border-radius: 4px;
   margin: 3px 0;
 }
-nav #menu_button.opened_menu_button {
-  animation: menu_button_animation 1s forwards;
+nav #menu_button.opened_menu_button > ion-icon:nth-child(2) {
+  opacity: 1;
+}
+nav #menu_button.opened_menu_button > ion-icon:nth-child(1) {
   opacity: 0;
-}
-@keyframes menu_button_animation {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-nav #menu_button.opened_menu_button > span {
-  height: 2px;
-}
-nav #menu_button.opened_menu_button > span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-nav #menu_button.opened_menu_button > span:nth-child(2) {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
 nav > menu {
   width: 100%;
