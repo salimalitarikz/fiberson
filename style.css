@@ -126,7 +126,7 @@ body {
   min-height: 100%;
   width: 100%;
   background: #fbfbfb;
-  background: url(/img/bg_zebra.png), linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 86%, #00c4f2 95%, #00c4f2 100%);
+  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 5%, #00c4f2 20%, #00c4f2 100%);
   background-size: 70px, auto;
   overflow-x: hidden;
   position: relative;
@@ -403,7 +403,7 @@ main .main_part#main_part_1::before {
   background-color: #fcfcfc;
   opacity: 1;
   width: 100vw;
-  height: 100vh;
+  height: 102vh;
   transform: translateX(-1vw) translateY(-1vh);
   position: absolute;
   left: 0;
@@ -642,11 +642,10 @@ main .main_part#main_part_1 > .banner > button {
   transform: scale(1.2);
   padding: 0.8rem 4rem;
   transition: 0.3s;
-  border: 1px solid rgba(0, 13, 255, 0.4392156863);
+  border: 1px solid #03003e;
   background-color: #fcfcfc;
-  box-shadow: 1px 1px #03003e;
   opacity: 0;
-  border-radius: 10px;
+  border-radius: 7px;
   animation: banner_late 1s forwards;
   opacity: 0;
   transform: translateY(1rem);

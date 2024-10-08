@@ -163,7 +163,7 @@ body{
     min-height: 100%;
     width: 100%;
     background: #fbfbfb;
-    background: url(/img/bg_zebra.png), linear-gradient(0deg,#ffffff00 0%, #fbfbfb 86%, #00c4f2 95%, #00c4f2 100%);
+    background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 5%, #00c4f2 20%, #00c4f2 100%);
     background-size: 70px,auto;
     overflow-x: hidden ;
     position: relative;
@@ -305,11 +305,6 @@ body{
         }
     }
 }
-
-
-
-
-
 
 nav{
     background-color: $light;
@@ -491,10 +486,6 @@ nav{
     }
 }
 
-
-
-
-
 main{
     width: calc(100% - 2vw);
     height: calc(100% - 2vw);
@@ -536,7 +527,7 @@ main{
             background-color: $light;
             opacity: 1;
             width: 100vw;
-            height: 100vh;
+            height: 102vh;
             transform: translateX(-1vw) translateY(-1vh);
             position: absolute;
             left: 0;
@@ -807,11 +798,10 @@ main{
                     transform: scale(1.2);
                     padding: .8rem 4rem;
                     transition: .3s;
-                    border: 1px solid #000dff70;
+                    border: 1px solid $dark;
                     background-color: $light;
-                    box-shadow: 1px 1px  $dark;
                     opacity: 0;
-                    border-radius: 10px;
+                    border-radius: 7px;
                     
                      // Animation
                      animation: banner_late 1s forwards;
