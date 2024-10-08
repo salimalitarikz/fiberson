@@ -141,7 +141,8 @@ button{
     box-sizing: border-box;
     // font-family: 'Neue Plak', sans-serif;
     transition: .2s;
-    font-family: "Poppins", sans-serif;
+    // font-family: "Poppins", sans-serif;
+    font-family: 'Neue Plak', sans-serif;
     font-weight: 400;
 }
 
@@ -158,6 +159,37 @@ body{
 
   
 }
+
+
+// Addition Pages
+
+#request_project{
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $light;
+    padding: 1rem;
+
+    display: none;
+
+    >h1{
+        font-size: 3rem;
+        font-weight: 500;
+
+        >span{
+            text-decoration: underline;
+            text-decoration-color: $accent;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
 
 
 nav{
@@ -340,6 +372,10 @@ nav{
     }
 }
 
+
+
+
+
 main{
     width: calc(100% - 2vw);
     height: calc(100% - 2vw);
@@ -375,6 +411,29 @@ main{
           background-color: transparent !important;
           background: unset !important;
 
+
+          &::before{
+            content:"";
+            background-color: $light;
+            opacity: 1;
+            width: 100vw;
+            height: 100vh;
+            transform: translateX(-1vw) translateY(-1vh);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -2;
+            animation: animate_part_1_bg 2s forwards linear;
+            animation-delay: 1.5s;
+
+            @keyframes animate_part_1_bg {
+                to{
+                    opacity: .4;
+                }
+            }
+
+          }
+
          >*{
             opacity: 0;
          }
@@ -389,6 +448,8 @@ main{
                 transform: translateX(-50%);
                 z-index: -1;
                 opacity: 1;
+
+                
                 
 
                 
