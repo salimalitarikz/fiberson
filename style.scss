@@ -388,16 +388,46 @@ nav{
         width: 3rem;
         aspect-ratio: 1/1;
         background-color: transparent !important;
-        font-size: 2rem;
-        >span{
-            font-size: 3rem;
-            color: $dark;
-            
-        }
-        
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .3rem;
 
         
+        >span{
+            width: 90%;
+            height: 3.2px;
+            background-color: $dark;
+            border-radius: 4px;
+            margin: 3px 0;
+        }
+
+        &.opened_menu_button{
+            animation: menu_button_animation 1s forwards;
+            opacity: 0;
+
+            @keyframes menu_button_animation {
+                0%{opacity: 0;}
+                10%{opacity: 0;}
+                100%{opacity: 1;}
+            }
+
+            >span{
+                height: 2px;
+            }
+            
+            >span:nth-child(1){
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            >span:nth-child(2){
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+
+
+
+        }
+
        
     }
 

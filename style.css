@@ -295,11 +295,42 @@ nav #menu_button {
   width: 3rem;
   aspect-ratio: 1/1;
   background-color: transparent !important;
-  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
 }
 nav #menu_button > span {
-  font-size: 3rem;
-  color: #03003e;
+  width: 90%;
+  height: 3.2px;
+  background-color: #03003e;
+  border-radius: 4px;
+  margin: 3px 0;
+}
+nav #menu_button.opened_menu_button {
+  animation: menu_button_animation 1s forwards;
+  opacity: 0;
+}
+@keyframes menu_button_animation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+nav #menu_button.opened_menu_button > span {
+  height: 2px;
+}
+nav #menu_button.opened_menu_button > span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+nav #menu_button.opened_menu_button > span:nth-child(2) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 nav > menu {
   width: 100%;
