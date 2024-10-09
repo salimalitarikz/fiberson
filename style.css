@@ -715,13 +715,12 @@ main .main_part#main_part_3 > .part_3_upper > .part_3_names {
 }
 main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1 {
   width: 33%;
-  max-width: 33%;
 }
 main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1.slider_header_none {
   display: none;
 }
 main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1.slider_header_passive {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   animation: slider_header_passive 0.7s forwards;
 }
@@ -829,7 +828,7 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
 main .main_part#main_part_4 {
   background-color: #fcfcfc;
   padding: 2rem;
-  padding-top: 7rem;
+  padding-top: 4rem;
   position: relative;
   display: flex;
   flex-direction: column;

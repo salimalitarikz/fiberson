@@ -908,7 +908,6 @@ main{
                     >h1{
 
                         width: 33%;
-                        max-width: 33%;
 
 
                         &.slider_header_none{
@@ -917,7 +916,7 @@ main{
 
                         &.slider_header_passive{
                           
-                                font-size: 1.2rem;
+                                font-size: 1rem;
                                 font-weight: 500;
 
                                 animation:slider_header_passive .7s forwards ;
@@ -1063,7 +1062,7 @@ main{
         &#main_part_4{
             background-color: $light;
             padding: 2rem;
-            padding-top: 7rem;
+            padding-top: 4rem;
             position: relative;
             display: flex;
             flex-direction: column;
