@@ -11,7 +11,7 @@
 
 $primary:#001fff;
 $secondary:#0073ff;
-$tertiary:#94D6EA;
+$tertiary:#527aff;
 $dark:#00013e;
 $accent:#000dff;
 $light:#fcfcfc;
@@ -316,7 +316,7 @@ body{
 
 nav{
     background-color: transparent;
-    width: 98%;
+    width: 94%;
     height: 45px;
     position: fixed;
     top: 1rem;
@@ -570,15 +570,15 @@ main{
 
         &:nth-child(odd){
             background: #ffffff;
-            background: -webkit-linear-gradient(0deg, #ffffff 0%, #7be5ff 100%);
-            background: linear-gradient(0deg, #ffffff 70%, #7be5ff 100%);
+            background: -webkit-linear-gradient(0deg, #ffffff 0%,  $tertiary 100%);
+            background: linear-gradient(0deg, #ffffff 60%, $tertiary 100%);
             
         }
 
         &:nth-child(even){
             background: #7be5ff;
-            background: -webkit-linear-gradient(0deg, #7be5ff 0%, #ffffff 100%);
-            background: linear-gradient(0deg, #7be5ff 0%, #ffffff 100%);
+            background: -webkit-linear-gradient(0deg,  $tertiary 0%, #ffffff 100%);
+            background: linear-gradient(0deg,  $tertiary 0%, #ffffff 100%);
         }
 
 
@@ -763,10 +763,8 @@ main{
 
 
         &#main_part_2{
-            background-color: $light;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            background-image: url(/img/bg_zebra.png);
             display: flex;
             flex-direction: column;
             padding: 5rem 3rem;
