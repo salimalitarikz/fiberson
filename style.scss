@@ -11,7 +11,7 @@
 
 $primary:#001fff;
 $secondary:#0073ff;
-$tertiary:#527aff;
+$tertiary:#e2e8ff;
 $dark:#00013e;
 $accent:#000dff;
 $light:#fcfcfc;
@@ -171,7 +171,7 @@ body{
     min-height: 100%;
     width: 100%;
     background: #fbfbfb;
-    background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 5%, $primary 20%, $secondary 100%);
+    background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 8%, $primary 20%, $secondary 100%);
     background-size: 70px,auto;
     overflow-x: hidden ;
     position: relative;
@@ -763,8 +763,7 @@ main{
 
 
         &#main_part_2{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             padding: 5rem 3rem;
@@ -876,11 +875,14 @@ main{
 
 
         &#main_part_3{
-            background-color: $light;
+            background: unset;
+            background-color: $primary !important;
             padding-top: 5rem;
+            padding-bottom: 5rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            color: $light;
 
             >.part_3_upper{
                 height: 5rem;
@@ -1011,7 +1013,7 @@ main{
                                 height: 70%;
                                 .cls-1 {
                                     fill: none;
-                                    stroke: $primary;
+                                    stroke: $light;
                                     stroke-miterlimit: 50;
                                     stroke-width: 4px;
                                   }
@@ -1043,8 +1045,8 @@ main{
                         border-radius: 30px;
                         width: 7rem;
                         padding: .2rem 0;
-                        background-color: $dark;
-                        color: $light;
+                        background-color: $light;
+                        color: $accent;
                         font-size: 40px;
                         display: flex;
                         align-items: center;
@@ -1066,6 +1068,8 @@ main{
             display: flex;
             flex-direction: column;
             gap: 5rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             overflow: hidden;
             
 

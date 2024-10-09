@@ -130,7 +130,7 @@ body {
   min-height: 100%;
   width: 100%;
   background: #fbfbfb;
-  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 5%, #001fff 20%, #0073ff 100%);
+  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 8%, #001fff 20%, #0073ff 100%);
   background-size: 70px, auto;
   overflow-x: hidden;
   position: relative;
@@ -442,11 +442,11 @@ main .main_part {
 }
 main .main_part:nth-child(odd) {
   background: #ffffff;
-  background: linear-gradient(0deg, #ffffff 60%, #527aff 100%);
+  background: linear-gradient(0deg, #ffffff 60%, #e2e8ff 100%);
 }
 main .main_part:nth-child(even) {
   background: #7be5ff;
-  background: linear-gradient(0deg, #527aff 0%, #ffffff 100%);
+  background: linear-gradient(0deg, #e2e8ff 0%, #ffffff 100%);
 }
 main .main_part#main_part_1 {
   position: relative;
@@ -603,8 +603,7 @@ main .main_part#main_part_1 > .banner > button:hover {
   padding: 0.8rem 3.5rem;
 }
 main .main_part#main_part_2 {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 5rem 3rem;
@@ -685,11 +684,14 @@ main .main_part#main_part_2 > .part_content > div:nth-child(2) {
   }
 }
 main .main_part#main_part_3 {
-  background-color: #fcfcfc;
+  background: unset;
+  background-color: #001fff !important;
   padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  color: #fcfcfc;
 }
 main .main_part#main_part_3 > .part_3_upper {
   height: 5rem;
@@ -797,7 +799,7 @@ main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div > svg .cls-1 {
   fill: none;
-  stroke: #001fff;
+  stroke: #fcfcfc;
   stroke-miterlimit: 50;
   stroke-width: 4px;
 }
@@ -817,8 +819,8 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
   border-radius: 30px;
   width: 7rem;
   padding: 0.2rem 0;
-  background-color: #00013e;
-  color: #fcfcfc;
+  background-color: #fcfcfc;
+  color: #000dff;
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -832,6 +834,8 @@ main .main_part#main_part_4 {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   overflow: hidden;
 }
 main .main_part#main_part_4 * {
