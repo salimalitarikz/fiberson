@@ -737,7 +737,7 @@ main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1.slider_header_p
   }
 }
 main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1.slider_header_active {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 700;
   animation: slider_header_active 0.7s forwards;
 }
@@ -784,13 +784,14 @@ main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible
   }
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div {
-  height: 50vh !important;
+  height: 30vh !important;
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div > svg {
+  height: 70%;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   pointer-events: none;
