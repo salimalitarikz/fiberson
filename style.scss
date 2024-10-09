@@ -9,10 +9,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 // Roots
 
-$primary:#00C4F2;
-$secondary:#004FAD;
+$primary:#001fff;
+$secondary:#0073ff;
 $tertiary:#94D6EA;
-$dark:#03003e;
+$dark:#00013e;
 $accent:#000dff;
 $light:#fcfcfc;
 
@@ -171,7 +171,7 @@ body{
     min-height: 100%;
     width: 100%;
     background: #fbfbfb;
-    background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 5%, #00c4f2 20%, #00c4f2 100%);
+    background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 5%, $primary 20%, $secondary 100%);
     background-size: 70px,auto;
     overflow-x: hidden ;
     position: relative;
@@ -315,7 +315,7 @@ body{
 }
 
 nav{
-    background-color: $light;
+    background-color: transparent;
     width: 98%;
     height: 45px;
     position: fixed;
@@ -326,25 +326,28 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
     z-index: 2;
 
     
-                    // Animation
-                    animation: nav_late .7s forwards;
-                    opacity: 0;
-                    transform: translateY(-2rem) translateX(-50%);
-                    animation-delay: 2.3s;
-    
-                    @keyframes nav_late {
-                        to{
-                            opacity: 1;
-                            transform: translateY(0) translateX(-50%);
-                        }
-                    }
+   // Animation
+   animation: nav_late .7s forwards;
+   opacity: 0;
+   transform: translateY(-2rem) translateX(-50%);
+   animation-delay: 2.3s;
+
+   @keyframes nav_late {
+       to{
+           opacity: 1;
+           transform: translateY(0) translateX(-50%);
+       }
+   }                 
     
 
     >.nav_left{
+        height: 3.5rem;
+        background-color: $light;
+        padding: 0 1rem;
+        border-radius: 10px;
         >a{
             width: 100%;
             height: 100%;
@@ -385,13 +388,14 @@ nav{
     }
 
     #menu_button{
-        width: 3rem;
+        width: 3.5rem;
         aspect-ratio: 1/1;
-        background-color: transparent !important;
+        background-color: $light !important;
         gap: .3rem;
         position: relative;
+        transition: .5s;
 
-        >ion-icon{
+        >*{
             color:$dark;
             font-size: 3rem;
             position: absolute;
@@ -399,26 +403,43 @@ nav{
             
         }
 
-        >ion-icon:nth-child(2){
+        >*:nth-child(2){
             opacity: 0;
         }
 
-        
-        >span{
+        >div{
             width: 90%;
-            height: 2.5px;
-            background-color: $dark;
-            border-radius: 4px;
-            margin: 3px 0;
+            height: 90%;
+            margin: 1px 0;
+            position: relative;
+            >span{
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 2px;
+                background-color: $dark;
+                position: absolute;
+
+                $ss:.8rem;
+
+                &:nth-child(1){top: $ss;left: $ss;}
+                &:nth-child(2){bottom: $ss;left: $ss;}
+                &:nth-child(3){bottom: $ss;right: $ss;}
+                &:nth-child(4){top: $ss;right: $ss;}
+                
+            }
+
+
         }
+        
 
         &.opened_menu_button{
 
-            >ion-icon:nth-child(2){
+            >*:nth-child(2){
                 opacity: 1;
             }
 
-            >ion-icon:nth-child(1){
+            >*:nth-child(1){
                 opacity: 0;
             }
 
@@ -650,13 +671,7 @@ main{
                         }
                       }
 
-                      @keyframes animateDashReverse {
-                        0% {
-                          stroke-dashoffset: 0;
-                        }100%{
-                            stroke-dashoffset: 1000;
-                        }
-                      }
+                    
 
 
                     @media only screen and (min-width: 550px) {
@@ -1020,13 +1035,58 @@ main{
                     text-align: center;
 
                     >h1{
-                        font-size: 1.2rem;
+
+                        width: 33%;
+                        max-width: 33%;
 
 
-                        &:nth-child(2){
-                            font-size: 1.7rem;
-                            font-weight: 600;
+                        &.slider_header_none{
+                            display: none;
                         }
+
+                        &.slider_header_passive{
+                          
+                                font-size: 1.2rem;
+                                font-weight: 500;
+
+                                animation:slider_header_passive .7s forwards ;
+
+                                @keyframes slider_header_passive {
+                                    0%{
+                                        opacity: 0;
+                                    }
+                                    50%{
+                                        opacity: 0;
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                    }
+
+                                }
+                        }
+
+                        &.slider_header_active{
+                            font-size: 1.7rem;
+                            font-weight: 700;
+                            animation:slider_header_active .7s forwards ;
+
+                            @keyframes slider_header_active {
+                                0%{
+                                    opacity: 0;
+                                }
+                                50%{
+                                    opacity: 0;
+                                }
+                                100%{
+                                    opacity: 1;
+                                }
+
+                            }
+                        }
+                       
+
+
+                       
                     }
                 }
             }
@@ -1044,7 +1104,55 @@ main{
                     align-items: center;
                     justify-content: flex-start;
                     gap: 6rem;
+                    
 
+                    &.slider_content_none{
+                        display: none;
+                    }
+
+                    &.slider_content_visible{
+                        >p{
+                            animation: slider_content_p 1s forwards;
+
+                            @keyframes slider_content_p {
+                                0%{
+                                    opacity: 0;
+                                    transform: translateY(1rem);
+                                }
+                                100%{
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                }
+                            }
+
+                            
+                        }
+
+
+                        >div{
+                            >svg{
+
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: rgb(0, 81, 255);
+                                    stroke-miterlimit: 50;
+                                    stroke-width: 5px;
+                                  }
+                                     // Svg Animation
+                                    stroke-dasharray: 1000;
+                                    stroke-dashoffset: 1000;
+                                    pointer-events: none;
+                                    animation: animateDash 2s linear forwards;
+                                    @keyframes animateDash {
+                                        to {
+                                        stroke-dashoffset: 0;
+                                        }
+                                    }
+
+                            }
+                        }
+                        
+                    }
 
                     >div{
                         width: 60%;
@@ -1066,7 +1174,7 @@ main{
                         border-radius: 30px;
                         width: 7rem;
                         padding: .2rem 0;
-                        background-color: $accent;
+                        background-color: $dark;
                         color: $light;
                         font-size: 40px;
                         display: flex;

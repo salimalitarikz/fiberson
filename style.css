@@ -63,7 +63,7 @@ button {
 }
 
 .button_outline {
-  border: 1px solid #03003e;
+  border: 1px solid #00013e;
   padding: 0.2rem 0.8rem;
   border-radius: 5px;
   display: flex;
@@ -71,12 +71,12 @@ button {
   justify-content: center;
 }
 .button_outline:hover {
-  text-shadow: 0 0 1px #03003e;
-  box-shadow: 0 0 1px #03003e;
+  text-shadow: 0 0 1px #00013e;
+  box-shadow: 0 0 1px #00013e;
 }
 
 .button_filled {
-  background-color: #03003e;
+  background-color: #00013e;
   color: #fcfcfc;
 }
 
@@ -104,7 +104,7 @@ button {
   transition: all 0.5s;
 }
 .animated_link:hover, nav .nav_right > a:hover, nav > .nav_middle > a:hover {
-  text-shadow: 0 0 1px #03003e;
+  text-shadow: 0 0 1px #00013e;
 }
 .animated_link:hover > span, nav .nav_right > a:hover > span, nav > .nav_middle > a:hover > span {
   display: inline-block;
@@ -130,7 +130,7 @@ body {
   min-height: 100%;
   width: 100%;
   background: #fbfbfb;
-  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 5%, #00c4f2 20%, #00c4f2 100%);
+  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 5%, #001fff 20%, #0073ff 100%);
   background-size: 70px, auto;
   overflow-x: hidden;
   position: relative;
@@ -159,7 +159,7 @@ body {
   width: 4rem;
   height: 4rem;
   border-radius: 10px;
-  background-color: #03003e;
+  background-color: #00013e;
   align-items: center;
   justify-content: center;
 }
@@ -195,7 +195,7 @@ body {
   font-weight: 700;
 }
 #request_project > form {
-  background-color: #03003e;
+  background-color: #00013e;
   width: 98%;
   position: relative;
   left: 50%;
@@ -243,7 +243,7 @@ body {
 }
 
 nav {
-  background-color: #fcfcfc;
+  background-color: transparent;
   width: 98%;
   height: 45px;
   position: fixed;
@@ -254,7 +254,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
   z-index: 2;
   animation: nav_late 0.7s forwards;
   opacity: 0;
@@ -266,6 +265,12 @@ nav {
     opacity: 1;
     transform: translateY(0) translateX(-50%);
   }
+}
+nav > .nav_left {
+  height: 3.5rem;
+  background-color: #fcfcfc;
+  padding: 0 1rem;
+  border-radius: 10px;
 }
 nav > .nav_left > a {
   width: 100%;
@@ -292,32 +297,56 @@ nav .nav_right {
   display: none;
 }
 nav #menu_button {
-  width: 3rem;
+  width: 3.5rem;
   aspect-ratio: 1/1;
-  background-color: transparent !important;
+  background-color: #fcfcfc !important;
   gap: 0.3rem;
   position: relative;
+  transition: 0.5s;
 }
-nav #menu_button > ion-icon {
-  color: #03003e;
+nav #menu_button > * {
+  color: #00013e;
   font-size: 3rem;
   position: absolute;
   --ionicon-stroke-width: 21.5px;
 }
-nav #menu_button > ion-icon:nth-child(2) {
+nav #menu_button > *:nth-child(2) {
   opacity: 0;
 }
-nav #menu_button > span {
+nav #menu_button > div {
   width: 90%;
-  height: 2.5px;
-  background-color: #03003e;
-  border-radius: 4px;
-  margin: 3px 0;
+  height: 90%;
+  margin: 1px 0;
+  position: relative;
 }
-nav #menu_button.opened_menu_button > ion-icon:nth-child(2) {
+nav #menu_button > div > span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00013e;
+  position: absolute;
+}
+nav #menu_button > div > span:nth-child(1) {
+  top: 0.8rem;
+  left: 0.8rem;
+}
+nav #menu_button > div > span:nth-child(2) {
+  bottom: 0.8rem;
+  left: 0.8rem;
+}
+nav #menu_button > div > span:nth-child(3) {
+  bottom: 0.8rem;
+  right: 0.8rem;
+}
+nav #menu_button > div > span:nth-child(4) {
+  top: 0.8rem;
+  right: 0.8rem;
+}
+nav #menu_button.opened_menu_button > *:nth-child(2) {
   opacity: 1;
 }
-nav #menu_button.opened_menu_button > ion-icon:nth-child(1) {
+nav #menu_button.opened_menu_button > *:nth-child(1) {
   opacity: 0;
 }
 nav > menu {
@@ -386,7 +415,7 @@ nav > menu > .menu_lower > .menu_line {
   width: 100%;
   height: 1.2px;
   top: -0.5rem;
-  background-color: #03003e;
+  background-color: #00013e;
 }
 @media screen and (min-width: 768px) {
   nav .nav_middle {
@@ -496,14 +525,6 @@ main .main_part#main_part_1 .background_image > svg {
 @keyframes animateDash {
   to {
     stroke-dashoffset: 0;
-  }
-}
-@keyframes animateDashReverse {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 1000;
   }
 }
 @media only screen and (min-width: 550px) {
@@ -651,7 +672,7 @@ main .main_part#main_part_1 > .banner > h1 {
   text-align: center;
   width: 100%;
   font-weight: 600;
-  color: #03003e;
+  color: #00013e;
   animation: banner_late 1s forwards;
   opacity: 0;
   transform: translateY(1rem);
@@ -669,7 +690,7 @@ main .main_part#main_part_1 > .banner > button {
   transform: scale(1.2);
   padding: 0.8rem 4rem;
   transition: 0.3s;
-  border: 1px solid #03003e;
+  border: 1px solid #00013e;
   background-color: #fcfcfc;
   opacity: 0;
   border-radius: 7px;
@@ -685,7 +706,7 @@ main .main_part#main_part_1 > .banner > button {
   }
 }
 main .main_part#main_part_1 > .banner > button:hover {
-  background-color: #03003e;
+  background-color: #00013e;
   color: #fcfcfc;
   border-radius: 30px;
   padding: 0.8rem 3.5rem;
@@ -802,11 +823,43 @@ main .main_part#main_part_3 > .part_3_upper > .part_3_names {
   text-align: center;
 }
 main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1 {
-  font-size: 1.2rem;
+  width: 33%;
+  max-width: 33%;
 }
-main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1:nth-child(2) {
+main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1.slider_header_none {
+  display: none;
+}
+main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1.slider_header_passive {
+  font-size: 1.2rem;
+  font-weight: 500;
+  animation: slider_header_passive 0.7s forwards;
+}
+@keyframes slider_header_passive {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1.slider_header_active {
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 700;
+  animation: slider_header_active 0.7s forwards;
+}
+@keyframes slider_header_active {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main .main_part#main_part_3 .part_3_lower {
   display: flex;
@@ -821,6 +874,39 @@ main .main_part#main_part_3 .part_3_lower .part_3_content {
   align-items: center;
   justify-content: flex-start;
   gap: 6rem;
+}
+main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_none {
+  display: none;
+}
+main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > p {
+  animation: slider_content_p 1s forwards;
+}
+@keyframes slider_content_p {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div > svg {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  pointer-events: none;
+  animation: animateDash 2s linear forwards;
+}
+main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div > svg .cls-1 {
+  fill: none;
+  stroke: rgb(0, 81, 255);
+  stroke-miterlimit: 50;
+  stroke-width: 5px;
+}
+@keyframes animateDash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content > div {
   width: 60%;
@@ -840,7 +926,7 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
   border-radius: 30px;
   width: 7rem;
   padding: 0.2rem 0;
-  background-color: #000dff;
+  background-color: #00013e;
   color: #fcfcfc;
   font-size: 40px;
   display: flex;
@@ -974,7 +1060,7 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group {
 main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group > input, main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group textarea {
   width: 100%;
   padding: 1rem 1rem;
-  border: 1px solid #03003e;
+  border: 1px solid #00013e;
   font-size: 1.2rem;
   border-radius: 8px;
   background-color: transparent;
@@ -986,7 +1072,7 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group::after 
   left: 0.5rem;
   top: -0.7rem;
   background-color: #fcfcfc;
-  color: #03003e;
+  color: #00013e;
   z-index: 3;
   padding: 0 0.5rem;
 }
