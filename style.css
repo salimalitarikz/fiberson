@@ -21,7 +21,7 @@
 }
 @media only screen and (max-width: 769px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -308,7 +308,7 @@ nav #menu_button > * {
   color: #00013e;
   font-size: 3rem;
   position: absolute;
-  --ionicon-stroke-width: 21.5px;
+  --ionicon-stroke-width: 24.5px;
 }
 nav #menu_button > *:nth-child(2) {
   opacity: 0;
@@ -522,6 +522,12 @@ main .main_part#main_part_1 .background_image > svg {
   pointer-events: none;
   animation: animateDash 4s linear forwards;
 }
+main .main_part#main_part_1 .background_image > svg .cls-1 {
+  fill: none;
+  stroke: #001fff;
+  stroke-width: 3px;
+  stroke-miterlimit: 10;
+}
 @keyframes animateDash {
   to {
     stroke-dashoffset: 0;
@@ -541,121 +547,6 @@ main .main_part#main_part_1 .background_image > svg {
   main .main_part#main_part_1 .background_image > svg {
     transform: translateX(-45%) translateY(-20%) scale(0.8) !important;
   }
-}
-main .main_part#main_part_1 .background_image > svg .cls-1 {
-  opacity: 0.4;
-}
-main .main_part#main_part_1 .background_image > svg .cls-1, main .main_part#main_part_1 .background_image > svg .cls-2, main .main_part#main_part_1 .background_image > svg .cls-3, main .main_part#main_part_1 .background_image > svg .cls-4, main .main_part#main_part_1 .background_image > svg .cls-5, main .main_part#main_part_1 .background_image > svg .cls-6, main .main_part#main_part_1 .background_image > svg .cls-7, main .main_part#main_part_1 .background_image > svg .cls-8, main .main_part#main_part_1 .background_image > svg .cls-9, main .main_part#main_part_1 .background_image > svg .cls-10, main .main_part#main_part_1 .background_image > svg .cls-11, main .main_part#main_part_1 .background_image > svg .cls-12, main .main_part#main_part_1 .background_image > svg .cls-13, main .main_part#main_part_1 .background_image > svg .cls-14, main .main_part#main_part_1 .background_image > svg .cls-15, main .main_part#main_part_1 .background_image > svg .cls-16, main .main_part#main_part_1 .background_image > svg .cls-17, main .main_part#main_part_1 .background_image > svg .cls-18, main .main_part#main_part_1 .background_image > svg .cls-19, main .main_part#main_part_1 .background_image > svg .cls-20 {
-  fill: none;
-  stroke: #000367;
-  stroke-miterlimit: 50;
-  stroke-width: 3px;
-}
-main .main_part#main_part_1 .background_image > svg .cls-21 {
-  -webkit-clip-path: url(#clippath-6);
-          clip-path: url(#clippath-6);
-}
-main .main_part#main_part_1 .background_image > svg .cls-22 {
-  -webkit-clip-path: url(#clippath-7);
-          clip-path: url(#clippath-7);
-}
-main .main_part#main_part_1 .background_image > svg .cls-23 {
-  -webkit-clip-path: url(#clippath-15);
-          clip-path: url(#clippath-15);
-}
-main .main_part#main_part_1 .background_image > svg .cls-24 {
-  -webkit-clip-path: url(#clippath-4);
-          clip-path: url(#clippath-4);
-}
-main .main_part#main_part_1 .background_image > svg .cls-2 {
-  opacity: 0.9;
-}
-main .main_part#main_part_1 .background_image > svg .cls-2, main .main_part#main_part_1 .background_image > svg .cls-5, main .main_part#main_part_1 .background_image > svg .cls-9, main .main_part#main_part_1 .background_image > svg .cls-15, main .main_part#main_part_1 .background_image > svg .cls-16, main .main_part#main_part_1 .background_image > svg .cls-17 {
-  mix-blend-mode: multiply;
-}
-main .main_part#main_part_1 .background_image > svg .cls-3, main .main_part#main_part_1 .background_image > svg .cls-25, main .main_part#main_part_1 .background_image > svg .cls-18 {
-  opacity: 0.3;
-}
-main .main_part#main_part_1 .background_image > svg .cls-3, main .main_part#main_part_1 .background_image > svg .cls-10, main .main_part#main_part_1 .background_image > svg .cls-11, main .main_part#main_part_1 .background_image > svg .cls-12, main .main_part#main_part_1 .background_image > svg .cls-26, main .main_part#main_part_1 .background_image > svg .cls-19 {
-  mix-blend-mode: screen;
-}
-main .main_part#main_part_1 .background_image > svg .cls-4 {
-  opacity: 0.08;
-}
-main .main_part#main_part_1 .background_image > svg .cls-27 {
-  -webkit-clip-path: url(#clippath-9);
-          clip-path: url(#clippath-9);
-}
-main .main_part#main_part_1 .background_image > svg .cls-28 {
-  -webkit-clip-path: url(#clippath-10);
-          clip-path: url(#clippath-10);
-}
-main .main_part#main_part_1 .background_image > svg .cls-29 {
-  -webkit-mask: url(#mask);
-          mask: url(#mask);
-}
-main .main_part#main_part_1 .background_image > svg .cls-5, main .main_part#main_part_1 .background_image > svg .cls-14 {
-  opacity: 0.8;
-}
-main .main_part#main_part_1 .background_image > svg .cls-6, main .main_part#main_part_1 .background_image > svg .cls-11, main .main_part#main_part_1 .background_image > svg .cls-15 {
-  opacity: 0.5;
-}
-main .main_part#main_part_1 .background_image > svg .cls-30 {
-  -webkit-clip-path: url(#clippath-11);
-          clip-path: url(#clippath-11);
-}
-main .main_part#main_part_1 .background_image > svg .cls-7 {
-  opacity: 0.1;
-}
-main .main_part#main_part_1 .background_image > svg .cls-9, main .main_part#main_part_1 .background_image > svg .cls-31, main .main_part#main_part_1 .background_image > svg .cls-20 {
-  opacity: 0.7;
-}
-main .main_part#main_part_1 .background_image > svg .cls-32 {
-  -webkit-clip-path: url(#clippath-1);
-          clip-path: url(#clippath-1);
-}
-main .main_part#main_part_1 .background_image > svg .cls-33 {
-  isolation: isolate;
-}
-main .main_part#main_part_1 .background_image > svg .cls-34 {
-  -webkit-clip-path: url(#clippath-5);
-          clip-path: url(#clippath-5);
-}
-main .main_part#main_part_1 .background_image > svg .cls-35 {
-  -webkit-clip-path: url(#clippath-8);
-          clip-path: url(#clippath-8);
-}
-main .main_part#main_part_1 .background_image > svg .cls-36 {
-  opacity: 0.91;
-}
-main .main_part#main_part_1 .background_image > svg .cls-12, main .main_part#main_part_1 .background_image > svg .cls-26, main .main_part#main_part_1 .background_image > svg .cls-13, main .main_part#main_part_1 .background_image > svg .cls-17 {
-  opacity: 0.6;
-}
-main .main_part#main_part_1 .background_image > svg .cls-37 {
-  -webkit-clip-path: url(#clippath-3);
-          clip-path: url(#clippath-3);
-}
-main .main_part#main_part_1 .background_image > svg .cls-38 {
-  -webkit-clip-path: url(#clippath-12);
-          clip-path: url(#clippath-12);
-}
-main .main_part#main_part_1 .background_image > svg .cls-39 {
-  -webkit-clip-path: url(#clippath-14);
-          clip-path: url(#clippath-14);
-}
-main .main_part#main_part_1 .background_image > svg .cls-16, main .main_part#main_part_1 .background_image > svg .cls-19 {
-  opacity: 0.2;
-}
-main .main_part#main_part_1 .background_image > svg .cls-40 {
-  -webkit-clip-path: url(#clippath-2);
-          clip-path: url(#clippath-2);
-}
-main .main_part#main_part_1 .background_image > svg .cls-41 {
-  -webkit-clip-path: url(#clippath-13);
-          clip-path: url(#clippath-13);
-}
-main .main_part#main_part_1 .background_image > svg .cls-42 {
-  fill: url(#linear-gradient);
 }
 main .main_part#main_part_1 > .banner {
   position: relative;
@@ -800,7 +691,7 @@ main .main_part#main_part_3 {
   padding-top: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 2rem;
 }
 main .main_part#main_part_3 > .part_3_upper {
   height: 5rem;
@@ -865,20 +756,21 @@ main .main_part#main_part_3 .part_3_lower {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6rem;
-  padding: 3rem;
+  gap: 4rem;
+  padding: 0 3rem;
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 6rem;
+  gap: 4rem;
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_none {
   display: none;
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > p {
+  font-size: 1.2rem;
   animation: slider_content_p 1s forwards;
 }
 @keyframes slider_content_p {
@@ -891,6 +783,13 @@ main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible
     transform: translateY(0);
   }
 }
+main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div {
+  height: 50vh !important;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div > svg {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -899,21 +798,14 @@ main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_visible > div > svg .cls-1 {
   fill: none;
-  stroke: rgb(0, 81, 255);
+  stroke: #001fff;
   stroke-miterlimit: 50;
-  stroke-width: 5px;
+  stroke-width: 4px;
 }
 @keyframes animateDash {
   to {
     stroke-dashoffset: 0;
   }
-}
-main .main_part#main_part_3 .part_3_lower .part_3_content > div {
-  width: 60%;
-}
-main .main_part#main_part_3 .part_3_lower .part_3_content > div > img {
-  width: 100%;
-  height: 100%;
 }
 main .main_part#main_part_3 .part_3_lower > .part_3_buttons {
   width: 100%;

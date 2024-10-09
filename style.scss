@@ -35,7 +35,7 @@ html{
     }
   
     @media only screen and (max-width: 769px) {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
@@ -399,7 +399,7 @@ nav{
             color:$dark;
             font-size: 3rem;
             position: absolute;
-            --ionicon-stroke-width: 21.5px;
+            --ionicon-stroke-width: 24.5px;
             
         }
 
@@ -658,7 +658,7 @@ main{
                     left: 40%;
                     position: relative;
                     transform: translateX(-50%) translateY(50%) scale(2);
-                   
+                    .cls-1{fill:none;stroke:$primary;stroke-width: 3px; stroke-miterlimit:10}
 
                     // Svg Animation
                     stroke-dasharray: 1000;
@@ -685,136 +685,7 @@ main{
                     @media only screen and (min-width: 1024px) {
                         transform: translateX(-45%) translateY(-20%) scale(.8) !important;
                     }
-                    .cls-1 {
-                        opacity: .4;
-                      }
-    
-                      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20 {
-                        fill: none;
-                        stroke: #000367;
-                        stroke-miterlimit: 50;
-                        stroke-width: 3px;
-                      }
-    
-                      .cls-21 {
-                        clip-path: url(#clippath-6);
-                      }
-    
-                      .cls-22 {
-                        clip-path: url(#clippath-7);
-                      }
-    
-                      .cls-23 {
-                        clip-path: url(#clippath-15);
-                      }
-    
-                      .cls-24 {
-                        clip-path: url(#clippath-4);
-                      }
-    
-                      .cls-2 {
-                        opacity: .9;
-                      }
-    
-                      .cls-2, .cls-5, .cls-9, .cls-15, .cls-16, .cls-17 {
-                        mix-blend-mode: multiply;
-                      }
-    
-                      .cls-3, .cls-25, .cls-18 {
-                        opacity: .3;
-                      }
-    
-                      .cls-3, .cls-10, .cls-11, .cls-12, .cls-26, .cls-19 {
-                        mix-blend-mode: screen;
-                      }
-    
-                      .cls-4 {
-                        opacity: .08;
-                      }
-    
-                      .cls-27 {
-                        clip-path: url(#clippath-9);
-                      }
-    
-                      .cls-28 {
-                        clip-path: url(#clippath-10);
-                      }
-    
-                      .cls-29 {
-                        mask: url(#mask);
-                      }
-    
-                      .cls-5, .cls-14 {
-                        opacity: .8;
-                      }
-    
-                      .cls-6, .cls-11, .cls-15 {
-                        opacity: .5;
-                      }
-    
-                      .cls-30 {
-                        clip-path: url(#clippath-11);
-                      }
-    
-                      .cls-7 {
-                        opacity: .1;
-                      }
-    
-                      .cls-9, .cls-31, .cls-20 {
-                        opacity: .7;
-                      }
-    
-                      .cls-32 {
-                        clip-path: url(#clippath-1);
-                      }
-    
-                      .cls-33 {
-                        isolation: isolate;
-                      }
-    
-                      .cls-34 {
-                        clip-path: url(#clippath-5);
-                      }
-    
-                      .cls-35 {
-                        clip-path: url(#clippath-8);
-                      }
-    
-                      .cls-36 {
-                        opacity: .91;
-                      }
-    
-                      .cls-12, .cls-26, .cls-13, .cls-17 {
-                        opacity: .6;
-                      }
-    
-                      .cls-37 {
-                        clip-path: url(#clippath-3);
-                      }
-    
-                      .cls-38 {
-                        clip-path: url(#clippath-12);
-                      }
-    
-                      .cls-39 {
-                        clip-path: url(#clippath-14);
-                      }
-    
-                      .cls-16, .cls-19 {
-                        opacity: .2;
-                      }
-    
-                      .cls-40 {
-                        clip-path: url(#clippath-2);
-                      }
-    
-                      .cls-41 {
-                        clip-path: url(#clippath-13);
-                      }
-    
-                      .cls-42 {
-                        fill: url(#linear-gradient);
-                      }
+                    
                 }
 
             }
@@ -1011,7 +882,7 @@ main{
             padding-top: 5rem;
             display: flex;
             flex-direction: column;
-            gap: 10rem;
+            gap: 2rem;
 
             >.part_3_upper{
                 height: 5rem;
@@ -1095,15 +966,15 @@ main{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 6rem;
-                padding: 3rem;
+                gap: 4rem;
+                padding: 0 3rem;
 
                 .part_3_content{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: flex-start;
-                    gap: 6rem;
+                    gap: 4rem;
                     
 
                     &.slider_content_none{
@@ -1112,6 +983,7 @@ main{
 
                     &.slider_content_visible{
                         >p{
+                            font-size: 1.2rem;
                             animation: slider_content_p 1s forwards;
 
                             @keyframes slider_content_p {
@@ -1130,13 +1002,20 @@ main{
 
 
                         >div{
+
+                            height: 50vh !important;
+                            width: 70%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            // background-color: $primary;
                             >svg{
 
                                 .cls-1 {
                                     fill: none;
-                                    stroke: rgb(0, 81, 255);
+                                    stroke: $primary;
                                     stroke-miterlimit: 50;
-                                    stroke-width: 5px;
+                                    stroke-width: 4px;
                                   }
                                      // Svg Animation
                                     stroke-dasharray: 1000;
@@ -1154,14 +1033,6 @@ main{
                         
                     }
 
-                    >div{
-                        width: 60%;
-
-                        >img{
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
                 }
 
                 >.part_3_buttons{
