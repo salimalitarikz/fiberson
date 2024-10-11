@@ -361,14 +361,18 @@ nav{
             }
 
             >div{
-                
+                height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;            
     
                 >span{
                     font-size: 1.4rem;
                 }
 
                 >P{
-                    font-size: .7rem;
+                    font-size: .8rem;
                 }
             }
 

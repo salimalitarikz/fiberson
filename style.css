@@ -284,11 +284,18 @@ nav > .nav_left > a > img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+nav > .nav_left > a > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
 nav > .nav_left > a > div > span {
   font-size: 1.4rem;
 }
 nav > .nav_left > a > div > P {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 nav > .nav_middle {
   display: none;
