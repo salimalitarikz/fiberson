@@ -269,7 +269,6 @@ nav {
 nav > .nav_left {
   height: 3.5rem;
   background-color: #fcfcfc;
-  padding: 0 1rem;
   border-radius: 10px;
 }
 nav > .nav_left > a {
