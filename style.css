@@ -130,7 +130,7 @@ body {
   min-height: 100%;
   width: 100%;
   background: #fbfbfb;
-  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 8%, #001fff 20%, #0073ff 100%);
+  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 8%, #243eff 20%, #0073ff 100%);
   background-size: 70px, auto;
   overflow-x: hidden;
   position: relative;
@@ -276,16 +276,19 @@ nav > .nav_left > a {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 nav > .nav_left > a > img {
-  height: 2.5rem;
+  height: 3.5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
-nav > .nav_left > a > span {
+nav > .nav_left > a > div > span {
   font-size: 1.4rem;
+}
+nav > .nav_left > a > div > P {
+  font-size: 0.7rem;
 }
 nav > .nav_middle {
   display: none;
@@ -524,7 +527,7 @@ main .main_part#main_part_1 .background_image > svg {
 }
 main .main_part#main_part_1 .background_image > svg .cls-1 {
   fill: none;
-  stroke: #001fff;
+  stroke: #243eff;
   stroke-width: 3px;
   stroke-miterlimit: 10;
 }
@@ -685,7 +688,7 @@ main .main_part#main_part_2 > .part_content > div:nth-child(2) {
 }
 main .main_part#main_part_3 {
   background: unset;
-  background-color: #001fff !important;
+  background-color: #243eff !important;
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
