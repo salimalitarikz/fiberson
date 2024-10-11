@@ -245,16 +245,18 @@ body {
 nav {
   background-color: transparent;
   width: 94%;
-  height: 45px;
+  height: 54px;
   position: fixed;
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
+  padding: 1rem 0.3rem;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+  background-color: #fcfcfc;
   animation: nav_late 0.7s forwards;
   opacity: 0;
   transform: translateY(-2rem) translateX(-50%);
@@ -268,7 +270,6 @@ nav {
 }
 nav > .nav_left {
   height: 3.5rem;
-  background-color: #fcfcfc;
   border-radius: 10px;
 }
 nav > .nav_left > a {

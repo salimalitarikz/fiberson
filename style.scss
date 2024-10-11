@@ -317,16 +317,18 @@ body{
 nav{
     background-color: transparent;
     width: 94%;
-    height: 45px;
+    height: 54px;
     position: fixed;
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
+    padding: 1rem .3rem;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
+    background-color: $light;
 
     
    // Animation
@@ -345,7 +347,7 @@ nav{
 
     >.nav_left{
         height: 3.5rem;
-        background-color: $light;
+        
         border-radius: 10px;
         >a{
             width: 100%;
