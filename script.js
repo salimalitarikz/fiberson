@@ -111,24 +111,27 @@ window.addEventListener("scroll", function(){
     const banner_header = this.document.querySelector("#banner_1 > h1")
     const scrollPosition = window.scrollY; // Sayfanın ne kadar aşağı kaydırıldığı
     const windowHeight = window.innerHeight; // Tarayıcı ekranının yüksekliği
+    // window height part
+    const whp = windowHeight/10;
+
     console.log(scrollPosition);
 
 
 
     // Eğer scroll miktarı, elementin pozisyonuna eşit ya da fazlaysa animasyonu başlat
-    if (scrollPosition < (windowHeight /4)  && scrollPosition >  (windowHeight /20))  {
+    if (scrollPosition < (whp*4)  && scrollPosition >  (whp*1))  {
         ad1.classList.add('banner_added');
     }else{
         ad1.classList.remove('banner_added');
     }
-    if (scrollPosition < (windowHeight /2)  && scrollPosition >  (windowHeight /4)){
+    if (scrollPosition < (whp*7)  && scrollPosition >  (whp*4)){
         ad1.classList.remove('banner_added');
         ad2.classList.add('banner_added');
     }
     else{
         ad2.classList.remove('banner_added');
     }
-    if ( scrollPosition >  (windowHeight /2)) {
+    if ( scrollPosition >  (whp*7)) {
         ad1.classList.remove('banner_added');
         ad2.classList.remove('banner_added');
         ad3.classList.add('banner_added');
