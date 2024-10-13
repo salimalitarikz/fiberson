@@ -405,13 +405,13 @@ nav{
     #menu_button{
         width: 3.5rem;
         aspect-ratio: 1/1;
-        background-color: $light !important;
+        background-color: $primary !important;
         gap: .3rem;
         position: relative;
         transition: .5s;
 
         >*{
-            color:$dark;
+            color:$light;
             font-size: 3rem;
             position: absolute;
             --ionicon-stroke-width: 24.5px;
@@ -432,10 +432,10 @@ nav{
                 width: 4px;
                 height: 4px;
                 border-radius: 2px;
-                background-color: $dark;
+                background-color: $light;
                 position: absolute;
 
-                $ss:.8rem;
+                $ss:.7rem;
 
                 &:nth-child(1){top: $ss;left: $ss;}
                 &:nth-child(2){bottom: $ss;left: $ss;}
