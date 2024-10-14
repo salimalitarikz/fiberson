@@ -180,140 +180,6 @@ body{
 }
 
 
-// Addition Pages
-
-#request_project{
-    width: 100vw;
-    height: 100vh;
-    max-height: 100vh;
-    z-index: 20 !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $light;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    display: none;
-    opacity: 0;
-        
-
-    >.close_circle{
-        position: absolute;
-        top: 3rem;
-        right: 2rem;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 10px;
-        background-color: $dark;
-        align-items: center;
-        justify-content: center;
-        
-
-
-        >span.material-symbols-outlined{
-            color:$light;
-            font-size: 2.5rem;
-        }
-    }
-
-    &.opened_req_proj{
-        display: flex;
-
-        animation: open_request_page .3s linear forwards;
-
-        @keyframes open_request_page {
-            0%{
-                display: none;
-                opacity: 0;
-            }
-            1%{
-                display: flex;
-                opacity: 0;
-            }
-
-            100%{
-                display: flex;
-                opacity: 1;
-            }
-        }
-    }
-
-    >h1{
-        font-size: 2rem;
-        font-weight: 500;
-
-        >span{
-            text-decoration: underline;
-            text-decoration-color: $accent;
-            font-weight: 700;
-        }
-    }
-
-
-    >form{
-        background-color: $dark;
-        width: 98%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        padding: 3rem 2rem;
-        border-radius: 10px;
-
-        >.req_form_group{
-            width: 100%;
-            position: relative;
-            
-            >input,textarea{
-                width: 100%;
-                padding: 1rem 1rem;
-                font-size: 1.2rem;
-                border-radius: 8px;
-                background-color: transparent;
-                position: relative;
-                background-color: $light;
-
-
-
-               
-    
-            }
-
-            &::after{
-                content: attr(data-label);
-                position: absolute;
-                left: 0rem;
-                top: -1.4rem;
-                z-index: 3;
-                padding: 0 .5rem;
-                font-weight: 500;
-                color: $light;
-                
-            }
-        }
-
-        >button{
-            padding: 1rem;
-        }
-    }
-
-
-    >.request_part_bar{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-
-        >.req_bar_right{
-            text-align: right;
-        }
-    }
-}
-
 nav{
     background-color: transparent;
     width: 98%;
@@ -327,7 +193,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 10;
     background-color: $light;
 
     
@@ -579,6 +445,7 @@ nav{
 
 .main_part_1_space{
     height: 150vh;
+    z-index: -2;
 }
 
 
@@ -589,7 +456,7 @@ nav{
           height: 100vh;
           background-color: transparent !important;
           background: unset !important;
-          
+          z-index: 3;
 
 
           &::before{
@@ -784,7 +651,144 @@ nav{
 
             }
            
+}
+
+
+// Addition Pages
+
+#request_project{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: 20 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $light;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    opacity: 0;
+        
+
+    >.close_circle{
+        position: absolute;
+        top: 1.3rem;
+        right: .6rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 7px;
+        background-color: $dark;
+        align-items: center;
+        justify-content: center;
+        
+
+
+        >ion-icon{
+            color:$light;
+            font-size: 2.5rem;
         }
+    }
+
+    &.opened_req_proj{
+        display: flex;
+
+        animation: open_request_page .3s linear forwards;
+
+        @keyframes open_request_page {
+            0%{
+                display: none;
+                opacity: 0;
+            }
+            1%{
+                display: flex;
+                opacity: 0;
+            }
+
+            100%{
+                display: flex;
+                opacity: 1;
+            }
+        }
+    }
+
+    >h1{
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        >span{
+            text-decoration: underline;
+            text-decoration-color: $accent;
+            font-weight: 700;
+        }
+    }
+
+
+    >form{
+        background-color: $dark;
+        width: 102.5%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 2rem;
+        border-radius: 10px;
+
+        >.req_form_group{
+            width: 100%;
+            position: relative;
+            
+            >input,textarea{
+                width: 100%;
+                padding: 1rem 1rem;
+                font-size: 1.2rem;
+                border-radius: 8px;
+                background-color: transparent;
+                position: relative;
+                background-color: $light;
+
+
+
+               
+    
+            }
+
+            &::after{
+                content: attr(data-label);
+                position: absolute;
+                left: 0rem;
+                top: -1.4rem;
+                z-index: 3;
+                padding: 0 .5rem;
+                font-weight: 500;
+                color: $light;
+                
+            }
+        }
+
+        >button{
+            padding: 1rem;
+        }
+    }
+
+
+    >.request_part_bar{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        >.req_bar_right{
+            text-align: right;
+        }
+    }
+}
+
+
 
 main{
     width: calc(100% - 2vw);
@@ -792,12 +796,14 @@ main{
     position: relative;
     left: 50%;
     transform:translate(-50% ) ;
+    z-index: 5;
     // border: 1px solid $dark;
 
     .main_part{
         background-color: $light;
         // height: 95vh;
         width: 100%;
+        
 
 
         &:nth-child(odd){
@@ -1398,7 +1404,63 @@ main{
 
 
         }
+        
 
+        &#main_part_7{
+            padding: 3rem 1rem;
+            padding-top: 3rem;
+
+
+            >h1{
+                font-size: 2.3rem;
+                width: 100%;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            >.part_7_content{
+                padding-top: 4rem;
+                
+
+                >.part_7_box{
+                   display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+                    width: 100%;
+
+                   >div{
+                    border-radius: 10px;
+                    overflow: hidden;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    >img{
+                        width: 70%;
+                        aspect-ratio: 1/1;
+                        object-fit: contain;
+                        border-radius: 10px;
+                    }
+
+                    >span{
+                        flex-grow: 1;
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                    }
+                    
+                    &:nth-child(1){
+                        align-self: flex-start;
+                    }
+                    &:nth-last-child(1){
+                        align-self: flex-end;
+                    }
+                   }
+                }
+
+            }
+        }
 
         &#main_part_5{
             padding-top: 8rem;
