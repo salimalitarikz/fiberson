@@ -182,7 +182,7 @@ body{
 
 nav{
     background-color: transparent;
-    width: 98%;
+    width: 97%;
     height: 54px;
     position: fixed;
     top: 1rem;
@@ -1014,14 +1014,17 @@ main{
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: column;    
-                gap: 1.5rem;            
+                gap: 1.5rem;    
+                position: relative;        
                 
                 >h1{
                     font-size: 2.4rem;
                     font-weight: 600;
                     text-align: center;
                     
-
+                    &.opacity_0{
+                        opacity: 0 !important;
+                    }
                     
 
 
@@ -1031,6 +1034,23 @@ main{
                     &:nth-child(3){
                         opacity: .3;
                     }
+                }
+
+                
+
+                >div{
+                    width: 0%;
+                    height: 4px;
+                    background-color: $primary;
+                    position: absolute;
+                    bottom: -.1rem;
+                    left: 12.5%;
+                    border-radius: 5px;
+
+                    &.banner_2_div_opened{
+                        width: 75%;
+                    }
+                    
                 }
             }
 

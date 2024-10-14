@@ -190,9 +190,7 @@ window.addEventListener("scroll", function(){
     const windowHeight = window.innerHeight; // Tarayıcı ekranının yüksekliği
     // window height part
     const whp = windowHeight/10;
-
-
-
+    console.log(scrollPosition);
 
     // Eğer scroll miktarı, elementin pozisyonuna eşit ya da fazlaysa animasyonu başlat
     if (scrollPosition < (whp*4)  && scrollPosition >  (whp*1))  {
@@ -215,8 +213,27 @@ window.addEventListener("scroll", function(){
     else{
         ad3.classList.remove('banner_added');
     }
-    
-   
+
+
+    // Banner 2
+
+    const banner_2_head_1 = this.document.getElementById("banner_2_head_1");
+    const banner_2_head_2 = this.document.getElementById("banner_2_head_2");
+    const banner_2_head_3 = this.document.getElementById("banner_2_head_3");
+    const banner_2_div = this.document.getElementById("banner_2_div");
+
+    if (scrollPosition > 650) {
+        banner_2_head_1.classList.remove("opacity_0");
+    }else{banner_2_head_1.classList.add("opacity_0");}
+    if (scrollPosition > 750) {
+        banner_2_head_2.classList.remove("opacity_0");
+    }else{banner_2_head_2.classList.add("opacity_0");}
+    if (scrollPosition > 850) {
+        banner_2_head_3.classList.remove("opacity_0");
+    }else{banner_2_head_3.classList.add("opacity_0");}
+    if (scrollPosition > 950) {
+        banner_2_div.classList.add("banner_2_div_opened");
+    }else{banner_2_div.classList.remove("banner_2_div_opened");}
 });
 
 

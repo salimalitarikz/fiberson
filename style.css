@@ -138,7 +138,7 @@ body {
 
 nav {
   background-color: transparent;
-  width: 98%;
+  width: 97%;
   height: 54px;
   position: fixed;
   top: 1rem;
@@ -808,17 +808,33 @@ main .main_part#main_part_2 > .banner {
   justify-content: flex-start;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
 }
 main .main_part#main_part_2 > .banner > h1 {
   font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
 }
+main .main_part#main_part_2 > .banner > h1.opacity_0 {
+  opacity: 0 !important;
+}
 main .main_part#main_part_2 > .banner > h1:nth-child(2) {
   opacity: 0.5;
 }
 main .main_part#main_part_2 > .banner > h1:nth-child(3) {
   opacity: 0.3;
+}
+main .main_part#main_part_2 > .banner > div {
+  width: 0%;
+  height: 4px;
+  background-color: #243eff;
+  position: absolute;
+  bottom: -0.1rem;
+  left: 12.5%;
+  border-radius: 5px;
+}
+main .main_part#main_part_2 > .banner > div.banner_2_div_opened {
+  width: 75%;
 }
 main .main_part#main_part_2 > .part_header {
   width: 100%;
