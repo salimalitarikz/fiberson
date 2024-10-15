@@ -527,9 +527,9 @@ nav{
                 >svg{
                     width: 100%;
                     object-fit: cover;
-                    left: 40%;
+                    left: 34%;
                     position: relative;
-                    transform: translateX(-50%) translateY(50%) scale(2);
+                    transform: translateX(-50%) translateY(20%) scale(2);
                     .cls-1{fill:none;stroke:$primary;stroke-width: 3px; stroke-miterlimit:10}
                     transition: 2s;
 
@@ -547,11 +547,17 @@ nav{
                       }
 
                     @keyframes animateSvgSize {
-                        0%{
-                            transform:translateX(-50%) scale(2);
+                        2%{
+                            transform:translateX(-50%)translateY(20%) scale(2);
                             stroke-dashoffset: 0;
-                        }100%{
-                            transform: translateX(-50%) scale(0);
+                        }
+                      
+                        15%{
+                            stroke-dashoffset: 1000;
+                        }
+                        
+                        100%{
+                            transform: translateX(-50%)translateY(20%) scale(6);
                             stroke-dashoffset: 1000;
                         }
                     }
