@@ -171,7 +171,7 @@ body{
     min-height: 100%;
     width: 100%;
     background: #fbfbfb;
-    // background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 8%, $primary 20%, $secondary 100%);
+    background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 8%, $primary 20%, $secondary 100%);
     background-size: 70px,auto;
     overflow-x: hidden ;
     position: relative;
@@ -491,11 +491,14 @@ nav{
                 overflow: hidden;
                 position: absolute;
                 left: 50%;
-                bottom: -40%;
+                top: 0%;
                 transform: translateX(-50%);
                 z-index: -1;
                 opacity: 1;
-
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                
                 
                 
 
@@ -528,6 +531,7 @@ nav{
                     position: relative;
                     transform: translateX(-50%) translateY(50%) scale(2);
                     .cls-1{fill:none;stroke:$primary;stroke-width: 3px; stroke-miterlimit:10}
+                    transition: 2s;
 
                     // Svg Animation
                     stroke-dasharray: 1000;
@@ -538,15 +542,17 @@ nav{
                    
                     @keyframes animateDash {
                         to {
-                          stroke-dashoffset: 1000;
+                          stroke-dashoffset: 0;
                         }
                       }
 
                     @keyframes animateSvgSize {
                         0%{
-                            transform:translateX(-50%) scale(2.5);
+                            transform:translateX(-50%) scale(2);
+                            stroke-dashoffset: 0;
                         }100%{
-                            transform: translateX(-50%) scale(1);
+                            transform: translateX(-50%) scale(0);
+                            stroke-dashoffset: 1000;
                         }
                     }
 
