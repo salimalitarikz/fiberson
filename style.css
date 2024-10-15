@@ -433,16 +433,11 @@ nav > menu > .menu_lower > .menu_line {
   }
 }
 @keyframes animateSvgSize {
-  1% {
-    transform: translateX(-50%) translateY(20%) scale(2);
-    stroke-dashoffset: 0;
-  }
-  15% {
-    stroke-dashoffset: 1000;
+  0% {
+    transform: translateX(-50%) translateY(5%) scale(2);
   }
   100% {
-    transform: translateX(-50%) translateY(-60%) scale(-1);
-    stroke-dashoffset: 1000;
+    transform: translateX(-50%) translateY(-200%) scale(-1);
   }
 }
 @media only screen and (min-width: 550px) {

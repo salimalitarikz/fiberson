@@ -547,18 +547,18 @@ nav{
                       }
 
                     @keyframes animateSvgSize {
-                        1%{
-                            transform:translateX(-50%)translateY(20%) scale(2);
-                            stroke-dashoffset: 0;
+                        0%{
+                            transform:translateX(-50%)translateY(5%) scale(2);
+                            // stroke-dashoffset: 0;
                         }
                       
-                        15%{
-                            stroke-dashoffset: 1000;
-                        }
+                        // 15%{
+                        //     stroke-dashoffset: 1000;
+                        // }
                         
                         100%{
-                            transform: translateX(-50%)translateY(-60%) scale(-1);
-                            stroke-dashoffset: 1000;
+                            transform: translateX(-50%)translateY(-200%) scale(-1);
+                            // stroke-dashoffset: 1000;
                         }
                     }
 
