@@ -547,7 +547,7 @@ nav{
                       }
 
                     @keyframes animateSvgSize {
-                        2%{
+                        1%{
                             transform:translateX(-50%)translateY(20%) scale(2);
                             stroke-dashoffset: 0;
                         }
@@ -557,7 +557,7 @@ nav{
                         }
                         
                         100%{
-                            transform: translateX(-50%)translateY(20%) scale(6);
+                            transform: translateX(-50%)translateY(-60%) scale(-1);
                             stroke-dashoffset: 1000;
                         }
                     }
