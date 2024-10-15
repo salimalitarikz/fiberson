@@ -334,6 +334,16 @@ nav > menu > .menu_lower > .menu_line {
   }
 }
 
+.an_header {
+  opacity: 0;
+  transform: translateX(5%);
+  transition: 0.5s;
+}
+.an_header.an_header_visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .main_part_1_space {
   height: 150vh;
   z-index: -2;
@@ -437,7 +447,7 @@ nav > menu > .menu_lower > .menu_line {
     transform: translateX(-50%) translateY(5%) scale(2);
   }
   100% {
-    transform: translateX(-50%) translateY(-200%) scale(-1);
+    transform: translateX(-50%) translateY(-10%) scale(4);
   }
 }
 @media only screen and (min-width: 550px) {

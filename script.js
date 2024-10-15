@@ -240,3 +240,30 @@ window.addEventListener("scroll", function(){
 
 /// INTERSECTION OBSERVER
 
+// Tüm .an_header sınıfına sahip elementleri seçiyoruz
+const headers = document.querySelectorAll('.an_header');
+
+// Intersection Observer ayarları
+const options = {
+    root: null, // null ise varsayılan olarak viewport kullanılır
+    rootMargin: '0px',
+    threshold: .6 // Elementin %10'u görünür olduğunda tetiklenecek
+};
+
+// Intersection Observer'ı oluşturuyoruz
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Element ekranda görünür olduğunda 'an_header_visible' class'ını ekliyoruz
+            entry.target.classList.add('an_header_visible');
+        } else {
+            // Element ekranda görünür olmadığında 'an_header_visible' class'ını kaldırıyoruz
+            entry.target.classList.remove('an_header_visible');
+        }
+    });
+}, options);
+
+// Her bir an_header elementini gözlemlemek için observer'ı bağlıyoruz
+headers.forEach(header => {
+    observer.observe(header);
+});
