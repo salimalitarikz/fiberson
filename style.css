@@ -344,6 +344,14 @@ nav > menu > .menu_lower > .menu_line {
   transform: translateX(0);
 }
 
+.an_op {
+  opacity: 0;
+  transition: 0.6s;
+}
+.an_op.an_op_visible {
+  opacity: 1;
+}
+
 .main_part_1_space {
   height: 150vh;
   z-index: -2;

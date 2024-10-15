@@ -247,7 +247,7 @@ const headers = document.querySelectorAll('.an_header');
 const options = {
     root: null, // null ise varsayılan olarak viewport kullanılır
     rootMargin: '0px',
-    threshold: .6 // Elementin %10'u görünür olduğunda tetiklenecek
+    threshold: .9 // Elementin %10'u görünür olduğunda tetiklenecek
 };
 
 // Intersection Observer'ı oluşturuyoruz
@@ -266,4 +266,28 @@ const observer = new IntersectionObserver((entries) => {
 // Her bir an_header elementini gözlemlemek için observer'ı bağlıyoruz
 headers.forEach(header => {
     observer.observe(header);
+});
+
+
+// Tüm .an_header sınıfına sahip elementleri seçiyoruz
+const an_els = document.querySelectorAll('.an_op');
+
+
+
+// Intersection Observer'ı oluşturuyoruz
+const observer_op = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Element ekranda görünür olduğunda 'an_header_visible' class'ını ekliyoruz
+            entry.target.classList.add('an_op_visible');
+        } else {
+            // Element ekranda görünür olmadığında 'an_header_visible' class'ını kaldırıyoruz
+            entry.target.classList.remove('an_op_visible');
+        }
+    });
+}, options);
+
+// Her bir an_header elementini gözlemlemek için observer'ı bağlıyoruz
+an_els.forEach(el => {
+    observer_op.observe(el);
 });

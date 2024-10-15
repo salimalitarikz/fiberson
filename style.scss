@@ -447,6 +447,15 @@ nav{
     }
 }
 
+.an_op{
+    opacity: 0;
+    transition: .6s;
+
+    &.an_op_visible{
+        opacity: 1;
+    }
+}
+
 
 // SPACE THINGS 
 
