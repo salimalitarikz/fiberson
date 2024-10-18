@@ -896,6 +896,18 @@ main .main_part#main_part_2 > .part_content > div:nth-child(2) {
   align-items: flex-end;
   text-align: right;
 }
+main .main_part#main_part_2 .partners {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+main .main_part#main_part_2 .partners > img {
+  width: 50%;
+}
 @media screen and (min-width: 768px) {
   main .main_part#main_part_2 {
     padding: 5rem 5rem;
