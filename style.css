@@ -282,18 +282,34 @@ nav > menu.opened_menu {
     opacity: 1;
   }
 }
+nav > menu.opened_menu > .menu_decoration > svg {
+  animation: menu_open_an 3s ease-in forwards;
+}
+@keyframes menu_open_an {
+  from {
+    stroke-dashoffset: 10000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 nav > menu > .menu_decoration {
-  width: 35%;
+  width: 55%;
   position: absolute;
   right: 0rem;
   top: -3rem;
   transform: rotate(-135deg);
 }
+nav > menu > .menu_decoration > svg {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  transition: 2s;
+}
 nav > menu > .menu_decoration > svg .cls-1 {
   fill: none;
-  stroke: #001b8e;
+  stroke: #002fff;
   stroke-miterlimit: 10;
-  stroke-width: 0.75px;
+  stroke-width: 2px;
 }
 nav > menu > .menu_upper {
   display: flex;
