@@ -1943,7 +1943,67 @@ main{
 
 
 
+// PAGES
 
+
+// SERVICES PAGE
+
+body:has(#services_page){
+    background: unset;
+}
+
+#services_page{
+    margin-top: 7rem;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+
+    >h1{
+        font-size: 2rem;
+        width: 93%;
+        float: right;
+        text-align: left;
+        font-weight: 600;
+    }
+
+
+    >div{
+        width: 100%;
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        
+        >div{
+            width: 90%;
+            padding: 3rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 1rem;
+            background-color: $tertiary;
+            border-radius: 15px;
+            
+            h2{
+                margin-bottom: .3rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+    
+            h3{
+                font-size: .9rem;
+                font-weight: 500;
+                &::before{
+                    content: "- ";
+                }
+            }
+        }
+      
+    }
+}
 
 
 

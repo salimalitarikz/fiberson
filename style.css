@@ -1559,4 +1559,54 @@ main .main_part#main_part_6 > .part_6_lower > .part_6_copyright {
 }
 main .main_part#main_part_6 > .part_6_lower > .part_6_copyright > span > a {
   color: #ff3c00;
+}
+
+body:has(#services_page) {
+  background: unset;
+}
+
+#services_page {
+  margin-top: 7rem;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+#services_page > h1 {
+  font-size: 2rem;
+  width: 93%;
+  float: right;
+  text-align: left;
+  font-weight: 600;
+}
+#services_page > div {
+  width: 100%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+#services_page > div > div {
+  width: 90%;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: #e2e8ff;
+  border-radius: 15px;
+}
+#services_page > div > div h2 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#services_page > div > div h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#services_page > div > div h3::before {
+  content: "- ";
 }/*# sourceMappingURL=style.css.map */
