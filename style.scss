@@ -1974,7 +1974,8 @@ body:has(#services_page){
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        gap: 2rem;
+        gap: 5rem;
+        
         
         >div{
             width: 90%;
@@ -1986,6 +1987,22 @@ body:has(#services_page){
             gap: 1rem;
             background-color: $tertiary;
             border-radius: 15px;
+            position: relative;
+
+            >.services_decoration{
+                position: absolute;
+                top: 1rem;
+                right:1rem;
+                display: flex;
+                justify-content: flex-end;                
+                
+                >svg{
+                    width: 15%;
+                    .cls-1,.cls-2{fill:none;stroke:$accent;stroke-miterlimit:10;stroke-width:6px}
+
+
+                }
+            }
             
             h2{
                 margin-bottom: .3rem;
