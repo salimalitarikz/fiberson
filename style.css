@@ -283,7 +283,7 @@ nav > menu.opened_menu {
   }
 }
 nav > menu.opened_menu > .menu_decoration > svg {
-  animation: menu_open_an 3s ease-in forwards;
+  animation: menu_open_an 2s ease-in forwards;
 }
 @keyframes menu_open_an {
   from {
@@ -291,6 +291,48 @@ nav > menu.opened_menu > .menu_decoration > svg {
   }
   to {
     stroke-dashoffset: 0;
+  }
+}
+nav > menu.opened_menu .menu_upper > a {
+  animation: menu_upper_an 0.5s forwards linear;
+}
+nav > menu.opened_menu .menu_upper > a:nth-child(1) {
+  animation-delay: 0.2s;
+}
+nav > menu.opened_menu .menu_upper > a:nth-child(2) {
+  animation-delay: 0.4s;
+}
+nav > menu.opened_menu .menu_upper > a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+nav > menu.opened_menu .menu_upper > a:nth-child(4) {
+  animation-delay: 0.8s;
+}
+nav > menu.opened_menu .menu_upper > a:nth-child(5) {
+  animation-delay: 1s;
+}
+@keyframes menu_upper_an {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+nav > menu.opened_menu > .menu_lower {
+  animation: menu_lower_an 0.5s linear forwards;
+  animation-delay: 1.3s;
+}
+@keyframes menu_lower_an {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 nav > menu > .menu_decoration {
@@ -322,6 +364,8 @@ nav > menu > .menu_upper {
 nav > menu > .menu_upper > a {
   font-size: 1.5rem;
   font-weight: 500;
+  opacity: 0;
+  transform: translateX(-1rem);
 }
 nav > menu > .menu_lower {
   margin-top: 5rem;
@@ -329,6 +373,8 @@ nav > menu > .menu_lower {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  opacity: 0;
+  transform: translateY(0.5rem);
 }
 nav > menu > .menu_lower > .menu_line {
   position: absolute;
@@ -611,8 +657,10 @@ nav > menu > .menu_lower > .menu_line {
   }
 }
 #request_project > h1 {
+  margin-top: 6rem;
   font-size: 1.8rem;
   font-weight: 500;
+  text-align: center;
 }
 #request_project > h1 > span {
   text-decoration: underline;
@@ -656,15 +704,30 @@ nav > menu > .menu_lower > .menu_line {
 }
 #request_project > form > button {
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#request_project > form > button, #request_project > form > button * {
+  font-weight: 600;
 }
 #request_project > .request_part_bar {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 1.3rem;
+  left: 0.6rem;
+}
+#request_project > .request_part_bar > .req_bar_left {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 #request_project > .request_part_bar > .req_bar_right {
-  text-align: right;
+  text-align: left;
 }
 
 main {
