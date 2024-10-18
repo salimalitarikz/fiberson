@@ -247,7 +247,7 @@ const headers = document.querySelectorAll('.an_header');
 const options = {
     root: null, // null ise varsayılan olarak viewport kullanılır
     rootMargin: '0px',
-    threshold: .9 // Elementin %10'u görünür olduğunda tetiklenecek
+    threshold: .4 // Elementin %10'u görünür olduğunda tetiklenecek
 };
 
 // Intersection Observer'ı oluşturuyoruz

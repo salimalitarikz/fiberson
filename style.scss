@@ -1948,7 +1948,7 @@ main{
 
 // SERVICES PAGE
 
-body:has(#services_page){
+body:has(#services_page),body:has(#gallery_page){
     background: unset;
 }
 
@@ -2019,6 +2019,75 @@ body:has(#services_page){
             }
         }
       
+    }
+}
+
+#gallery_page{
+    margin-top: 7rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    >h1{
+        font-size: 1.5rem;
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 600;
+        text-align: center;
+        border-bottom: 1px solid $primary;
+        padding-bottom: 2rem;
+    }
+
+    >.gallery_header{
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        top: 5.5rem;
+
+
+        >div{
+            width: 30%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background-color: $light;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+        }
+    }
+
+    >.gallery_content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+
+
+        >.gallery_content_box{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2rem 0;
+            border-bottom: 1px solid $primary;
+
+            >div{
+                width: 45%;
+                aspect-ratio: 1/1;
+                border-radius: 10px;
+                overflow: hidden;
+
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+        }
     }
 }
 
