@@ -1165,12 +1165,55 @@ main .main_part#main_part_7 > h1 {
 }
 main .main_part#main_part_7 > .part_7_content {
   padding-top: 4rem;
+  display: flex;
+  position: relative;
 }
 main .main_part#main_part_7 > .part_7_content > .part_7_box {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   width: 100%;
+  opacity: 0;
+  animation: galleryAn 24s infinite linear;
+  position: absolute;
+}
+@keyframes galleryAn {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+main .main_part#main_part_7 > .part_7_content > .part_7_box:nth-child(2) {
+  animation-delay: 3.4s;
+}
+main .main_part#main_part_7 > .part_7_content > .part_7_box:nth-child(3) {
+  animation-delay: 6.8s;
+}
+main .main_part#main_part_7 > .part_7_content > .part_7_box:nth-child(4) {
+  animation-delay: 10.2s;
+}
+main .main_part#main_part_7 > .part_7_content > .part_7_box:nth-child(5) {
+  animation-delay: 13.6s;
+}
+main .main_part#main_part_7 > .part_7_content > .part_7_box:nth-child(6) {
+  animation-delay: 17s;
+}
+main .main_part#main_part_7 > .part_7_content > .part_7_box:nth-child(7) {
+  animation-delay: 20.4s;
+}
+main .main_part#main_part_7 > .part_7_content > .part_7_box:nth-child(1) {
+  position: relative;
 }
 main .main_part#main_part_7 > .part_7_content > .part_7_box > div {
   border-radius: 10px;
