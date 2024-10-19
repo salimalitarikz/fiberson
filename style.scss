@@ -186,6 +186,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 100vw;
     color: $light !important;
     padding: 1rem;
 
@@ -255,7 +256,7 @@ footer{
             background-color: #000;
             padding: 2px 5px;
             border-radius: 5px;
-            color:#ff3c00;
+            color:$light;
         }
     }
 
@@ -2030,7 +2031,7 @@ main{
 
 // SERVICES PAGE
 
-body:has(#services_page),body:has(#gallery_page){
+body:has(#services_page),body:has(#gallery_page),body:has(#contact_page){
     background: unset;
 }
 
@@ -2204,6 +2205,45 @@ body:has(#services_page),body:has(#gallery_page){
 }
 
 
+#contact_page{
+    margin-top: 7rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    >h1{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    >div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: .7rem;
+
+        >div{
+            >ion-icon{
+                font-size: 1.7rem;
+            }
+        }
+
+        &:nth-last-child(1){
+            margin-top: 1rem;
+
+            >button{
+                padding: 1rem;
+                border: 1px solid $primary;
+            }
+        }
+    }
+
+}
 
 
 

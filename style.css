@@ -142,6 +142,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 100vw;
   color: #fcfcfc !important;
   padding: 1rem;
 }
@@ -199,7 +200,7 @@ footer > .footer_lower a {
   background-color: #000;
   padding: 2px 5px;
   border-radius: 5px;
-  color: #ff3c00;
+  color: #fcfcfc;
 }
 
 nav {
@@ -1627,7 +1628,7 @@ main .main_part#main_part_6 > .part_6_lower > .part_6_copyright > span > a {
   color: #ff3c00;
 }
 
-body:has(#services_page), body:has(#gallery_page) {
+body:has(#services_page), body:has(#gallery_page), body:has(#contact_page) {
   background: unset;
 }
 
@@ -1820,4 +1821,36 @@ body:has(#services_page), body:has(#gallery_page) {
 #gallery_page > .gallery_content > .gallery_content_box > div > img {
   width: 100%;
   height: 100%;
+}
+
+#contact_page {
+  margin-top: 7rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+#contact_page > h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#contact_page > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#contact_page > div > div > ion-icon {
+  font-size: 1.7rem;
+}
+#contact_page > div:nth-last-child(1) {
+  margin-top: 1rem;
+}
+#contact_page > div:nth-last-child(1) > button {
+  padding: 1rem;
+  border: 1px solid #243eff;
 }/*# sourceMappingURL=style.css.map */
