@@ -136,7 +136,27 @@ body {
   position: relative;
 }
 
+#whatsapp_button {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: #243eff;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#whatsapp_button > ion-icon {
+  position: relative;
+  z-index: 5;
+  font-size: 3rem;
+  color: #fcfcfc;
+}
+
 footer {
+  margin-top: 3rem;
   height: 35vh;
   background-color: #243eff;
   display: flex;
@@ -1210,13 +1230,16 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons {
 main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
   border-radius: 30px;
   width: 7rem;
-  padding: 0.2rem 0;
+  padding: 0.5rem 0;
   background-color: #fcfcfc;
   color: #000dff;
-  font-size: 40px;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:nth-child(1) > ion-icon {
+  transform: rotate(180deg);
 }
 main .main_part#main_part_4 {
   background-color: #fcfcfc;
@@ -1628,7 +1651,10 @@ main .main_part#main_part_6 > .part_6_lower > .part_6_copyright > span > a {
   color: #ff3c00;
 }
 
-body:has(#services_page), body:has(#gallery_page), body:has(#contact_page) {
+body:has(#services_page),
+body:has(#gallery_page),
+body:has(#about_page),
+body:has(#contact_page) {
   background: unset;
 }
 
@@ -1853,4 +1879,37 @@ body:has(#services_page), body:has(#gallery_page), body:has(#contact_page) {
 #contact_page > div:nth-last-child(1) > button {
   padding: 1rem;
   border: 1px solid #243eff;
+}
+
+#about_page {
+  margin-top: 7rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 1rem;
+}
+#about_page > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#about_page > div > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#about_page > div > h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#about_page > div > ul {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#about_page > div > ul > li > span {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
