@@ -1326,8 +1326,11 @@ main{
 
             .partners{
                 margin-top: 5rem;
-                width: 100%;
+                width: 50%;
                 display: flex;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
                 align-items: center;
                 flex-direction: column;
                 justify-content: center;
@@ -1365,13 +1368,13 @@ main{
             @media screen and (min-width: 1024px) {
                 padding: 5rem 10rem;
                 .part_header{
-                    width: 55%;
+                    width: 75%;
                 }
 
                 .part_content{
                     >div{
                         p{
-                            width: 40%;
+                            width: 90%;
                         }
                     }
                 }
@@ -1593,7 +1596,9 @@ main{
         &#main_part_4{
             background-color: $light;
             padding: 2rem;
+            
             padding-top: 4rem;
+            
             position: relative;
             display: flex;
             flex-direction: column;
@@ -1606,6 +1611,8 @@ main{
             *{
                 position: relative;
             }
+
+
      
 
             >.decoration_box{
@@ -1619,6 +1626,9 @@ main{
                     position: absolute;
 
                     >svg{
+
+                        max-width: 13rem;
+                        
                         .cls-1 {
                             fill: none;
                             stroke: #000fb0;
@@ -1634,7 +1644,7 @@ main{
                 }
 
                 >div:nth-child(1){
-                    width: 32%;
+                    width: 25%;
                     left: -4rem;
                     top: 3rem;
                 }
@@ -1689,7 +1699,32 @@ main{
                 }
             }
 
-            
+            @media screen and (min-width: 480px) {
+                padding: 2rem 6rem ;
+
+                >.decoration_box{
+                    >div:nth-child(1){
+                        width: 20%;
+                        left: -8rem;
+                        top: 0rem;
+                    }
+                }
+              }
+  
+
+            @media screen and (min-width: 768px) {
+              padding: 2rem 10rem ;
+
+
+              
+              >.decoration_box{
+                >div:nth-child(2){
+                    width: 28%;
+                    right: -2rem;
+                }
+            }
+              
+            }
 
 
         }
@@ -1697,10 +1732,17 @@ main{
 
         &#main_part_7{
             padding: 3rem 1rem;
-            padding-top: 3rem;
+            padding-top: 12rem;
+            padding-bottom: 10rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            position: relative;
+
+
+            @media screen and (min-width: 768px) {
+               
+            }
 
 
             >h1{
@@ -1708,12 +1750,17 @@ main{
                 width: 100%;
                 text-align: center;
                 font-weight: 600;
+                position: absolute;
+                top: 3rem;
             }
 
+
+          
+
             >.part_7_content{
-                padding-top: 4rem;
                 display: flex;
                 position: relative;
+                flex-grow: 1;
 
                 
 
@@ -1722,8 +1769,9 @@ main{
                 >.part_7_box{
                    display: flex;
                     flex-direction: column;
-                    gap: 4rem;
+                    gap: 2rem;
                     width: 100%;
+                    height: 100%;
                     opacity: 0;
                     animation: galleryAn 24s infinite linear;
 
@@ -1754,12 +1802,14 @@ main{
                     border-radius: 10px;
                     overflow: hidden;
                     width: 100%;
+                    aspect-ratio: 2 / 1; /* Genişliğin yüksekliğe oranı: 2:1 */
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
 
                     >img{
-                        width: 70%;
+                        height: 100%;
+
                         aspect-ratio: 1/1;
                         object-fit: contain;
                         border-radius: 10px;
@@ -1794,6 +1844,11 @@ main{
                 font-weight: 600;
                 border-radius: 3px;
                 margin-top: 3rem;
+                position: absolute;
+                bottom: -2.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 93%;
 
                 >ion-icon{
                     --ionicon-stroke-width: 55px !important;
@@ -1839,6 +1894,53 @@ main{
                         
                     }
 
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+
+
+                >.part_7_content{
+                    height: 60vh;
+                    max-height: 60vh;
+                }
+
+                >.part_7_progress{
+                    width: 20%;
+                    height: 60vh;
+                    flex-direction: column;
+                    align-items: center;
+
+                    >div{
+                        width: 3px;
+                        height: 0%;
+                        animation: part_7_an2 24s infinite forwards;
+                        border-radius: 2px;
+                        top: 2.5rem;
+                        left: unset;
+                        right: 7rem;
+    
+                        @keyframes part_7_an2 {
+                           0%{height: 1%;}
+                           14%{height: 15%;}
+                           28%{height: 29%;}
+                           42%{height: 43%;}
+                           56%{height: 58%;}
+                           70%{height: 72%;}
+                           84%{height: 87%;}
+                           98%{height: 2%;}
+                           100%{height: 1%;}
+                            
+                        }
+                    }
+
+                    >span{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                   
                 }
             }
         }
