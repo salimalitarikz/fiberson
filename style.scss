@@ -2063,6 +2063,7 @@ main{
 body:has(#services_page),
 body:has(#gallery_page),
 body:has(#about_page),
+body:has(#success_page),
 body:has(#contact_page){
     background: unset;
 }
@@ -2317,6 +2318,34 @@ body:has(#contact_page){
 
    
 
+}
+
+#success_page{
+    min-height: 40vh;
+    margin-top: 7rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1rem;
+
+    >h3{
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 150%;
+    }
+
+    >h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 150%;
+    }
 }
 
 

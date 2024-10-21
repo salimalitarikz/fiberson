@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <a id="whatsapp_button" href="">
+  <a id="whatsapp_button" href="https://wa.me/905412818260?text=Merhaba%20elektrik%20ve%20fiber%20optik%20tesisatı%20yaptırmak%20istiyorum.%20Projemin%20detayları%20-->%20">
     <ion-icon name="logo-whatsapp"></ion-icon>
   </a>
 
@@ -31,25 +31,30 @@
    
 
     <h1>Kaliteli bir iş mi ? <br> <span> Başvurun,</span> beraber başaralım</h1>
-    <form action="#">
+    <form action="https://api.staticforms.xyz/submit" method="post">
+      <input type="hidden" name="accessKey" value="31f3c5ea-5c62-4ac7-b1cf-caeadbd6abcc"> <!-- Required -->
       <div class="req_form_group"  data-label="İsminiz">
-        <input type="text" name="" id="">
+        <input type="text" name="name"> <!-- Optional -->
       </div>
       <div class="req_form_group"  data-label="Telefon Numaranız">
-        <input type="text" name="" id="">
+        <input type="text" name="phone"> <!-- Optional -->
       </div>
       <div class="req_form_group"  data-label="Mail Adresiniz">
-        <input type="text" name="" id="">
+        <input type="text" name="email"> <!-- Optional -->
       </div>
       <div class="req_form_group" data-label="Proje Detayları">
-        <textarea rows="9" name="" id=""></textarea>
+        <textarea rows="9" name="message"></textarea>
       </div>
 
+      <!-- If you want form to redirect to a specific url after submission -->
+      <input type="hidden" name="redirectTo" value="https://fiberson.net/success.html"> <!-- Optional -->
 
-      <button>Başvur <ion-icon name="arrow-forward-outline"></ion-icon></button>
+
+      <button type="submit" value="Submit" >Başvur <ion-icon name="arrow-forward-outline"></ion-icon></button>
 
 
     </form>
+
 
 
   </section>
@@ -1613,7 +1618,7 @@
         <span>7</span>
       </div>
 
-      <a href="">Daha Fazlası  <ion-icon name="arrow-forward-outline"></ion-icon></a>
+      <a href="gallery.html">Daha Fazlası  <ion-icon name="arrow-forward-outline"></ion-icon></a>
 
     </section>
 
