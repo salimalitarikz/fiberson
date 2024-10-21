@@ -1038,11 +1038,13 @@ main .main_part#main_part_2 > .banner > div {
   background-color: #243eff;
   position: absolute;
   bottom: -0.1rem;
-  left: 12.5%;
-  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  font-size: 2.4rem;
 }
 main .main_part#main_part_2 > .banner > div.banner_2_div_opened {
-  width: 75%;
+  width: 18rem;
 }
 main .main_part#main_part_2 > .part_header {
   width: 100%;
@@ -1085,20 +1087,28 @@ main .main_part#main_part_2 .partners {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: -1rem;
 }
 main .main_part#main_part_2 .partners > img {
-  width: 50%;
+  width: 40%;
 }
 @media screen and (min-width: 768px) {
   main .main_part#main_part_2 {
     padding: 5rem 5rem;
   }
   main .main_part#main_part_2 .part_header {
-    width: 70%;
+    width: 80%;
+  }
+  main .main_part#main_part_2 .part_content {
+    flex-direction: row;
+  }
+  main .main_part#main_part_2 .part_content > div {
+    width: 50%;
+    align-items: flex-start !important;
   }
   main .main_part#main_part_2 .part_content > div > p {
-    width: 45%;
+    width: 95%;
+    text-align: left !important;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1192,6 +1202,7 @@ main .main_part#main_part_3 .part_3_lower .part_3_content {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  text-align: center;
   gap: 4rem;
 }
 main .main_part#main_part_3 .part_3_lower .part_3_content.slider_content_none {
@@ -1253,9 +1264,23 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:hover {
+  background-color: #e0e0e0;
 }
 main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:nth-child(1) > ion-icon {
   transform: rotate(180deg);
+}
+@media screen and (min-width: 768px) {
+  main .main_part#main_part_3 {
+    padding: 5rem 12rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main_part#main_part_3 {
+    padding: 5rem 27rem;
+  }
 }
 main .main_part#main_part_4 {
   background-color: #fcfcfc;
