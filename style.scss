@@ -640,7 +640,7 @@ nav{
             content:"";
             background-color: $light;
             opacity: 1;
-            width: 100vw;
+            width: 110vw;
             height: 102vh;
             transform: translateX(0vw) translateY(-1vh);
             position: absolute;
@@ -663,21 +663,43 @@ nav{
          }
 
             .background_image{
-                width: 100vw;
-                height: 100vh;
-                overflow: hidden;
+                width: 125vw;
+                height: 110vh;
+
                 position: absolute;
                 left: 50%;
                 top: 0%;
-                transform: translateX(-50%);
+                transform: translateX(-47.5%) scale(.9) !important;
                 z-index: -1;
                 opacity: 1;
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 justify-content: center;
                 
                 
-                
+                @media only screen and (min-width: 450px) {
+                    height: 120vh;
+                    transform: translateX(-47.5%) scale(.8) !important;
+                }
+                @media only screen and (min-width: 550px) {
+                    width: 140vw;
+                    transform: translateX(-47.5%) scale(.7) !important;
+                }
+                @media only screen and (min-width: 650px) {
+                    transform: translateX(-47.5%) scale(.6) !important;
+                }
+
+                @media only screen and (min-width: 850px) {
+                    transform: translateX(-47.5%) translateY(-10%) scale(.6) !important;
+                }
+
+                @media only screen and (min-width: 1024px) {
+                    transform: translateX(-48%)translateY(-10%) scale(.5) !important;
+                }
+
+                @media only screen and (min-width: 1440px) {
+                    transform: translateX(-48%)translateY(-10%) scale(.4) !important;
+                }
 
                 
                
@@ -688,17 +710,7 @@ nav{
                     position: relative;
                     transform: translateX(-50%) translateY(50%) scale(2.5);
 
-                    @media only screen and (min-width: 550px) {
-                        transform: translateX(-50%) translateY(15%) scale(1.7) !important;
-                    }
-
-                    @media only screen and (min-width: 850px) {
-                        transform: translateX(-45%) translateY(-10%) scale(1) !important;
-                    }
-
-                    @media only screen and (min-width: 1024px) {
-                        transform: translateX(-45%) translateY(-20%) scale(.8) !important;
-                    }
+                   
                 }
 
                 >svg{
@@ -706,7 +718,7 @@ nav{
                     object-fit: cover;
                     left: 34%;
                     position: relative;
-                    transform: translateX(-50%) translateY(20%) scale(2);
+                    transform: translateX(-50%) translateY(40%) scale(2);
                     .cls-1{fill:none;stroke:$primary;stroke-width: 3px; stroke-miterlimit:10}
                     transition: 2s;
 
@@ -725,7 +737,7 @@ nav{
 
                     @keyframes animateSvgSize {
                         0%{
-                            transform:translateX(-50%)translateY(5%) scale(2);
+                            transform:translateX(-50%)translateY(65%) scale(1.5);
                             // stroke-dashoffset: 0;
                         }
                       
@@ -734,7 +746,7 @@ nav{
                         // }
                         
                         100%{
-                            transform: translateX(-50%)translateY(-10%) scale(4);
+                            transform: translateX(-50%)translateY(-0%) scale(4);
                             // stroke-dashoffset: 1000;
                         }
                     }
@@ -743,15 +755,15 @@ nav{
 
 
                     @media only screen and (min-width: 550px) {
-                        transform: translateX(-50%) translateY(15%) scale(1.7) !important;
+                        transform: translateX(-50%) translateY(20%) scale(.3);
                     }
 
                     @media only screen and (min-width: 850px) {
-                        transform: translateX(-45%) translateY(-10%) scale(1) !important;
+                        transform: translateX(-50%) translateY(30%) scale(.3);
                     }
 
                     @media only screen and (min-width: 1024px) {
-                        transform: translateX(-45%) translateY(-20%) scale(.8) !important;
+                        transform: translateX(-45%) translateY(-20%) scale(.3) ;
                     }
                     
                 }
