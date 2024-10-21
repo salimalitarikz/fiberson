@@ -133,6 +133,10 @@
 
   </nav>
 
+
+
+
+
   <section class="main_part" id="main_part_1">
     <div class="background_image">
       <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" viewBox="0 0 2294 2027">
@@ -1634,21 +1638,25 @@
         <h3 class="an_op">Bir kere daha kanıtlamamızda <br> ortak olmak ister misiniz ?</h3>
 
 
-        <form class="part_5_form" action="#">
+        <form class="part_5_form" action="https://api.staticforms.xyz/submit" method="post">
+          <input type="hidden" name="accessKey" value="31f3c5ea-5c62-4ac7-b1cf-caeadbd6abcc"> <!-- Required -->
           <div class="form_group"  data-label="İsminiz">
-            <input type="text" name="" id="">
+             <input type="text" name="name"> <!-- Optional -->
           </div>
           <div class="form_group" data-label="Telefon Numaranız">
-            <input type="text" name="" id="" >
+            <input type="text" name="phone"> <!-- Optional -->
           </div>
           <div class="form_group" data-label="Mail Adresiniz">
-            <input type="text" name="" id="" >
+            <input type="text" name="email"> <!-- Optional -->
           </div>
-          <div class="form_group" data-label="Projeniz Hakkında Vermek İstediğiniz Detaylar">
-            <textarea rows="7" name="" id=""></textarea>
+          <div class="form_group" data-label="Projenizin Detayları">
+            <textarea rows="7" name="message"></textarea>
           </div>
 
-          <button class="form_button">
+           <!-- If you want form to redirect to a specific url after submission -->
+           <input type="hidden" name="redirectTo" value="https://fiberson.net/success.html"> <!-- Optional -->
+
+          <button class="form_button" type="submit" value="Submit">
             <span>GÖNDER</span>
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </button>
