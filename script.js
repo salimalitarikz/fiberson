@@ -232,8 +232,8 @@ window.addEventListener("scroll", function(){
         banner_2_head_3.classList.remove("opacity_0");
     }else{banner_2_head_3.classList.add("opacity_0");}
     if (scrollPosition > 950) {
-        banner_2_head_3.classList.add("banner_2_div_opened");
-    }else{banner_2_head_3.classList.remove("banner_2_div_opened");}
+        banner_2_div.classList.add("banner_2_div_opened");
+    }else{banner_2_div.classList.remove("banner_2_div_opened");}
 });
 
 
