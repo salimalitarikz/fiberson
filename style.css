@@ -1337,7 +1337,8 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:nth-child(1) 
   }
   main .main_part#main_part_3 > .part_3_lower > .part_3_buttons {
     position: absolute;
-    left: 1rem;
+    left: -20rem;
+    bottom: 10rem;
     transform: rotate(90deg);
   }
 }
