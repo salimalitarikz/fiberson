@@ -1337,7 +1337,7 @@ main{
                 justify-content: center;
                 gap: -1rem;
                 >img{
-                    width: 100%;
+                    width: 10rem;
         
 
                 }
@@ -1745,9 +1745,6 @@ main{
             position: relative;
 
 
-            @media screen and (min-width: 768px) {
-               
-            }
 
 
             >h1{
@@ -1765,7 +1762,7 @@ main{
             >.part_7_content{
                 display: flex;
                 position: relative;
-                flex-grow: 1;
+                
 
                 
 
@@ -1904,9 +1901,12 @@ main{
 
             @media screen and (min-width: 768px) {
                 flex-direction: row;
+                justify-content: center;
+                gap: 5rem;
 
 
                 >.part_7_content{
+                    width: 80%;
                     height: 60vh;
                     max-height: 60vh;
                 }
@@ -1923,8 +1923,7 @@ main{
                         animation: part_7_an2 24s infinite forwards;
                         border-radius: 2px;
                         top: 2.5rem;
-                        left: unset;
-                        right: 8rem;
+                        left:3rem;
     
                         @keyframes part_7_an2 {
                            0%{height: 1%;}
@@ -1947,6 +1946,26 @@ main{
                     }
                    
                 }
+            }
+
+            @media screen and (min-width: 920px) {
+
+                >.part_7_content{
+                    width: 50%;
+                }
+
+                a{
+                    width: 60%;
+                }
+
+            }
+
+            @media screen and (min-width: 1024px) {
+
+                >.part_7_content{
+                    width: 30%;
+                }
+
             }
         }
 
@@ -2547,7 +2566,15 @@ body:has(#contact_page){
 
 
 
+// @media screen and (min-width: 768px) {
+//     *{
+//         all: unset !important;
+//     }
 
+//     .part_3_content{
+//         background-color: red !important;
+//     }
+// }
 
 
 
@@ -2916,4 +2943,7 @@ body:has(#contact_page){
 //     font-weight: normal;
 //     src: local('Neue Plak Text Thin Italic'), url('Neue Plak Text Thin Italic.woff') format('woff');
 //     }
+
+
+
 
