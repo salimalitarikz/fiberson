@@ -559,7 +559,7 @@ nav > menu > .menu_lower > .menu_line {
   position: absolute;
   left: 50%;
   top: 0%;
-  transform: translateX(-47.5%) scale(0.9) !important;
+  transform: translateX(-38%) scale(0.7) !important;
   z-index: -1;
   opacity: 1;
   display: flex;
@@ -585,17 +585,17 @@ nav > menu > .menu_lower > .menu_line {
 }
 @media only screen and (min-width: 850px) {
   #main_part_1 .background_image {
-    transform: translateX(-47.5%) translateY(-10%) scale(0.6) !important;
+    transform: translateX(-47.5%) translateY(-10%) scale(0.5) !important;
   }
 }
 @media only screen and (min-width: 1024px) {
   #main_part_1 .background_image {
-    transform: translateX(-48%) translateY(-10%) scale(0.5) !important;
+    transform: translateX(-48%) translateY(-10%) scale(0.4) !important;
   }
 }
 @media only screen and (min-width: 1440px) {
   #main_part_1 .background_image {
-    transform: translateX(-48%) translateY(-10%) scale(0.4) !important;
+    transform: translateX(-49%) translateY(-15%) scale(0.3) !important;
   }
 }
 #main_part_1 .background_image > img {
@@ -1312,7 +1312,7 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:nth-child(1) 
     gap: 0;
   }
   main .main_part#main_part_3 > .part_3_upper {
-    width: 40%;
+    width: 35%;
     height: 100%;
     flex-grow: 1;
     gap: 4rem;
@@ -1332,14 +1332,19 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:nth-child(1) 
     width: 100%;
   }
   main .main_part#main_part_3 > .part_3_lower {
-    width: 50%;
+    width: 55%;
     position: relative;
   }
   main .main_part#main_part_3 > .part_3_lower > .part_3_buttons {
     position: absolute;
-    left: -20rem;
-    bottom: 10rem;
-    transform: rotate(90deg);
+    left: -60%;
+    bottom: 10%;
+    transform: rotate(90deg) translateY(-50%);
+    gap: 3rem;
+  }
+  main .main_part#main_part_3 > .part_3_lower > .part_3_buttons > span {
+    border-radius: 1.2rem;
+    width: 4rem;
   }
 }
 main .main_part#main_part_4 {

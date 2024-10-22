@@ -688,7 +688,7 @@ nav{
                 position: absolute;
                 left: 50%;
                 top: 0%;
-                transform: translateX(-47.5%) scale(.9) !important;
+                transform: translateX(-38%) scale(.7) !important;
                 z-index: -1;
                 opacity: 1;
                 display: flex;
@@ -709,15 +709,15 @@ nav{
                 }
 
                 @media only screen and (min-width: 850px) {
-                    transform: translateX(-47.5%) translateY(-10%) scale(.6) !important;
+                    transform: translateX(-47.5%) translateY(-10%) scale(.5) !important;
                 }
 
                 @media only screen and (min-width: 1024px) {
-                    transform: translateX(-48%)translateY(-10%) scale(.5) !important;
+                    transform: translateX(-48%)translateY(-10%) scale(.4) !important;
                 }
 
                 @media only screen and (min-width: 1440px) {
-                    transform: translateX(-48%)translateY(-10%) scale(.4) !important;
+                    transform: translateX(-49%)translateY(-15%) scale(.3) !important;
                 }
 
                 
@@ -1629,7 +1629,7 @@ main{
             
 
               >.part_3_upper{
-                width: 40%;
+                width: 35%;
                 height: 100%;
                 flex-grow: 1;
                 gap: 4rem;
@@ -1653,13 +1653,19 @@ main{
               }
 
               >.part_3_lower{
-                width: 50%;
+                width: 55%;
                 position: relative;
                 >.part_3_buttons{
                     position: absolute;
-                    left: -20rem;
-                    bottom: 10rem;
-                    transform: rotate(90deg);
+                    left: -60%;
+                    bottom: 10%;
+                    transform: rotate(90deg) translateY(-50%);
+                    gap: 3rem;
+
+                    >span{
+                        border-radius: 1.2rem;
+                        width: 4rem;
+                    }
                 }
                 
               }
