@@ -182,10 +182,10 @@ body{
 
 #whatsapp_button{
     position: fixed;
-    bottom: 2.5rem;
+    bottom: 1.5rem;
     right: 1rem;
     padding: 1rem;
-    background-color: $primary;
+    background-color: #25D366;
     z-index: 50;
     display: flex;
     align-items: center;
@@ -2067,7 +2067,10 @@ main{
                 }
             }
 
-        }
+            @media screen and (min-width: 768px) {
+                
+
+        }}
 
 
         &#main_part_6{
@@ -2943,7 +2946,4 @@ body:has(#contact_page){
 //     font-weight: normal;
 //     src: local('Neue Plak Text Thin Italic'), url('Neue Plak Text Thin Italic.woff') format('woff');
 //     }
-
-
-
 
