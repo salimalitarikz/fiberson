@@ -10,6 +10,9 @@
   font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
 }
 
+html {
+  overflow-x: hidden !important;
+}
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 16px;
@@ -133,7 +136,7 @@ body {
   background: #fbfbfb;
   background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 8%, #243eff 20%, #0073ff 100%);
   background-size: 70px, auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   position: relative;
 }
 
@@ -1094,7 +1097,10 @@ main .main_part#main_part_2 .partners {
   gap: -1rem;
 }
 main .main_part#main_part_2 .partners > img {
-  width: 40%;
+  width: 100%;
+}
+main .main_part#main_part_2 .partners > h3 {
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   main .main_part#main_part_2 {
@@ -1577,7 +1583,7 @@ main .main_part#main_part_7 > .part_7_progress > div {
     border-radius: 2px;
     top: 2.5rem;
     left: unset;
-    right: 7rem;
+    right: 8rem;
   }
   @keyframes part_7_an2 {
     0% {

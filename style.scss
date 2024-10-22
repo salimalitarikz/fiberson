@@ -26,6 +26,7 @@ $light:#fcfcfc;
   }
 
 html{
+    overflow-x: hidden  !important;
     @media only screen and (max-width: 1200px) {
         font-size: 16px;
     }
@@ -173,7 +174,7 @@ body{
     background: #fbfbfb;
     background: url(/img/bg_zebra.png), linear-gradient(180deg,#ffffff00 0%, #fbfbfb 8%, $primary 20%, $secondary 100%);
     background-size: 70px,auto;
-    overflow-x: hidden ;
+    overflow-x: hidden  !important;
     position: relative;
 
   
@@ -1336,9 +1337,13 @@ main{
                 justify-content: center;
                 gap: -1rem;
                 >img{
-                    width: 40%;
+                    width: 100%;
         
 
+                }
+
+                >h3{
+                    text-align: center;
                 }
             }
 
@@ -1919,7 +1924,7 @@ main{
                         border-radius: 2px;
                         top: 2.5rem;
                         left: unset;
-                        right: 7rem;
+                        right: 8rem;
     
                         @keyframes part_7_an2 {
                            0%{height: 1%;}
