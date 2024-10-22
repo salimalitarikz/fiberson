@@ -687,8 +687,8 @@ nav{
 
                 position: absolute;
                 left: 50%;
-                top: 0%;
-                transform: translateX(-38.7%) scale(.9) !important;
+                top: -5%;
+                transform: translateX(-37.5%) scale(1) !important;
                 z-index: -1;
                 opacity: 1;
                 display: flex;
@@ -765,7 +765,7 @@ nav{
                         // }
                         
                         100%{
-                            transform: translateX(-50%)translateY(-0%) scale(4);
+                            transform: translateX(-50%)translateY(-0%) scale(5);
                             // stroke-dashoffset: 1000;
                         }
                     }

@@ -558,8 +558,8 @@ nav > menu > .menu_lower > .menu_line {
   height: 110vh;
   position: absolute;
   left: 50%;
-  top: 0%;
-  transform: translateX(-38.7%) scale(0.9) !important;
+  top: -5%;
+  transform: translateX(-37.5%) scale(1) !important;
   z-index: -1;
   opacity: 1;
   display: flex;
@@ -636,7 +636,7 @@ nav > menu > .menu_lower > .menu_line {
     transform: translateX(-50%) translateY(65%) scale(1.5);
   }
   100% {
-    transform: translateX(-50%) translateY(0%) scale(4);
+    transform: translateX(-50%) translateY(0%) scale(5);
   }
 }
 @media only screen and (min-width: 550px) {
