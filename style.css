@@ -1179,14 +1179,6 @@ main .main_part#main_part_3 > .part_3_upper {
   gap: 2rem;
   width: 100%;
 }
-main .main_part#main_part_3 > .part_3_upper > #part_3_line {
-  font-size: 2.5rem;
-  font-weight: 200;
-  height: 5rem;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
 main .main_part#main_part_3 > .part_3_upper > .part_3_names {
   display: flex;
   align-items: center;
@@ -1314,12 +1306,39 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:nth-child(1) 
 }
 @media screen and (min-width: 768px) {
   main .main_part#main_part_3 {
-    padding: 5rem 12rem;
+    padding: 5rem 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
   }
-}
-@media screen and (min-width: 1400px) {
-  main .main_part#main_part_3 {
-    padding: 5rem 27rem;
+  main .main_part#main_part_3 > .part_3_upper {
+    width: 40%;
+    height: 100%;
+    flex-grow: 1;
+    gap: 4rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+  }
+  main .main_part#main_part_3 > .part_3_upper > .part_3_names {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    gap: 4rem;
+    flex-grow: 1;
+  }
+  main .main_part#main_part_3 > .part_3_upper > .part_3_names > h1 {
+    width: 100%;
+  }
+  main .main_part#main_part_3 > .part_3_lower {
+    width: 50%;
+    position: relative;
+  }
+  main .main_part#main_part_3 > .part_3_lower > .part_3_buttons {
+    position: absolute;
+    left: 1rem;
+    transform: rotate(90deg);
   }
 }
 main .main_part#main_part_4 {
