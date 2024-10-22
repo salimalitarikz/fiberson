@@ -559,7 +559,7 @@ nav > menu > .menu_lower > .menu_line {
   position: absolute;
   left: 50%;
   top: 0%;
-  transform: translateX(-38%) scale(0.7) !important;
+  transform: translateX(-38.7%) scale(0.9) !important;
   z-index: -1;
   opacity: 1;
   display: flex;
@@ -569,7 +569,7 @@ nav > menu > .menu_lower > .menu_line {
 @media only screen and (min-width: 450px) {
   #main_part_1 .background_image {
     height: 120vh;
-    transform: translateX(-47.5%) scale(0.8) !important;
+    transform: translateX(-46.5%) scale(0.9) !important;
   }
 }
 @media only screen and (min-width: 550px) {

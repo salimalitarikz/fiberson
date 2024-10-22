@@ -688,7 +688,7 @@ nav{
                 position: absolute;
                 left: 50%;
                 top: 0%;
-                transform: translateX(-38%) scale(.7) !important;
+                transform: translateX(-38.7%) scale(.9) !important;
                 z-index: -1;
                 opacity: 1;
                 display: flex;
@@ -698,7 +698,7 @@ nav{
                 
                 @media only screen and (min-width: 450px) {
                     height: 120vh;
-                    transform: translateX(-47.5%) scale(.8) !important;
+                    transform: translateX(-46.5%) scale(.9) !important;
                 }
                 @media only screen and (min-width: 550px) {
                     width: 140vw;
