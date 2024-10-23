@@ -1334,7 +1334,7 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span:nth-child(1) 
     width: 100%;
   }
   main .main_part#main_part_3 > .part_3_lower {
-    width: 45%;
+    width: 55%;
   }
   main .main_part#main_part_3 > .part_3_lower > .part_3_buttons {
     position: absolute;
