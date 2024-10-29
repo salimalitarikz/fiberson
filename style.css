@@ -134,7 +134,7 @@ body {
   min-height: 100%;
   width: 100%;
   background: #fbfbfb;
-  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 8%, #243eff 20%, #0073ff 100%);
+  background: url(/img/bg_zebra.png), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 8%, #00a4af 20%, #00beb5 100%);
   background-size: 70px, auto;
   overflow-x: hidden !important;
   position: relative;
@@ -162,7 +162,7 @@ body {
 footer {
   margin-top: 3rem;
   height: 35vh;
-  background-color: #243eff;
+  background-color: #00a4af;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -307,7 +307,7 @@ nav .nav_right {
 nav #menu_button {
   width: 3.5rem;
   aspect-ratio: 1/1;
-  background-color: #243eff !important;
+  background-color: #00a4af !important;
   gap: 0.3rem;
   position: relative;
   transition: 0.5s;
@@ -622,7 +622,7 @@ nav > menu > .menu_lower > .menu_line {
 }
 #main_part_1 .background_image > svg .cls-1 {
   fill: none;
-  stroke: #243eff;
+  stroke: #00a4af;
   stroke-width: 3px;
   stroke-miterlimit: 10;
 }
@@ -801,7 +801,7 @@ nav > menu > .menu_lower > .menu_line {
 }
 #request_project > h1 > span {
   text-decoration: underline;
-  text-decoration-color: #000dff;
+  text-decoration-color: #00cbda;
   font-weight: 700;
 }
 #request_project > form {
@@ -964,7 +964,7 @@ main .main_part#main_part_1 .background_image > svg {
 }
 main .main_part#main_part_1 .background_image > svg .cls-1 {
   fill: none;
-  stroke: #243eff;
+  stroke: #00a4af;
   stroke-width: 3px;
   stroke-miterlimit: 10;
 }
@@ -1069,7 +1069,7 @@ main .main_part#main_part_2 > .banner > h1:nth-child(3) {
 main .main_part#main_part_2 > .banner > div {
   width: 0%;
   height: 4px;
-  background-color: #243eff;
+  background-color: #00a4af;
   position: absolute;
   bottom: -0.1rem;
   left: 50%;
@@ -1164,7 +1164,7 @@ main .main_part#main_part_2 .partners > h3 {
 }
 main .main_part#main_part_3 {
   background: unset;
-  background-color: #243eff !important;
+  background-color: #00a4af !important;
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
@@ -1292,7 +1292,7 @@ main .main_part#main_part_3 .part_3_lower > .part_3_buttons > span {
   width: 7rem;
   padding: 0.5rem 0;
   background-color: #fcfcfc;
-  color: #000dff;
+  color: #00cbda;
   font-size: 30px;
   display: flex;
   align-items: center;
@@ -1560,7 +1560,7 @@ main .main_part#main_part_7 > .part_7_content > .part_7_box > div:nth-last-child
   align-self: flex-end;
 }
 main .main_part#main_part_7 > a {
-  background-color: #243eff;
+  background-color: #00a4af;
   color: #fcfcfc;
   padding: 1rem;
   display: flex;
@@ -1598,7 +1598,7 @@ main .main_part#main_part_7 > .part_7_progress > div {
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #000dff;
+  background-color: #00cbda;
   animation: part_7_an 24s infinite forwards;
   border-radius: 2px;
 }
@@ -1775,7 +1775,7 @@ main .main_part#main_part_5 .part_5_content > .part_5_form > .form_group::after 
   padding: 0 0.5rem;
 }
 main .main_part#main_part_5 .part_5_content > .part_5_form > .form_button {
-  background-color: #000dff;
+  background-color: #00cbda;
   font-size: 1.2rem;
   color: #fcfcfc;
   padding: 0.7rem 1.5rem;
@@ -1955,7 +1955,7 @@ html:has(#gallery_page) {
 }
 #services_page > div > div > .services_decoration > svg .cls-1, #services_page > div > div > .services_decoration > svg .cls-2 {
   fill: none;
-  stroke: #000dff;
+  stroke: #00cbda;
   stroke-miterlimit: 10;
   stroke-width: 6px;
 }
@@ -2026,7 +2026,7 @@ html:has(#gallery_page) {
   align-items: center;
   justify-content: space-around;
   padding: 2rem 0;
-  border-bottom: 1px solid #243eff;
+  border-bottom: 1px solid #00a4af;
   animation: gallery_page_an 0.5s forwards;
   opacity: 0;
 }
@@ -2171,7 +2171,7 @@ html:has(#gallery_page) {
 }
 #contact_page > div:nth-last-child(1) > button {
   padding: 1rem;
-  border: 1px solid #243eff;
+  border: 1px solid #00a4af;
 }
 
 #about_page {
@@ -2190,7 +2190,7 @@ html:has(#gallery_page) {
   gap: 2rem;
 }
 #about_page > div:nth-child(2) {
-  background-color: #243eff;
+  background-color: #00a4af;
   padding: 2rem 1rem;
   border-radius: 1rem;
 }
