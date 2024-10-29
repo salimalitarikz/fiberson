@@ -388,6 +388,9 @@ nav > menu.opened_menu {
 nav > menu.opened_menu > .menu_decoration > svg {
   animation: menu_open_an 2s ease-in forwards;
 }
+nav > menu.opened_menu > .menu_decoration > svg .cls-1 {
+  stroke: #00a4af;
+}
 @keyframes menu_open_an {
   from {
     stroke-dashoffset: 10000;
@@ -1391,7 +1394,7 @@ main .main_part#main_part_4 > .decoration_box > div > svg {
 }
 main .main_part#main_part_4 > .decoration_box > div > svg .cls-1 {
   fill: none;
-  stroke: #000fb0;
+  stroke: #00a4af;
   stroke-miterlimit: 10;
   stroke-width: 1px;
 }

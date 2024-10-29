@@ -15,6 +15,9 @@ $tertiary:#e2e8ff;
 $dark:#00013e;
 $accent:#00cbda;
 $light:#fcfcfc;
+$aawdaw:#006a72;
+
+
 
 
 // $primary:#243eff;
@@ -497,6 +500,10 @@ nav{
             >.menu_decoration{
                 >svg{
                     animation: menu_open_an 2s ease-in forwards;
+
+                    .cls-1{
+                        stroke: $primary;
+                    }
 
                     @keyframes menu_open_an {
                         from{
@@ -1736,7 +1743,7 @@ main{
                         
                         .cls-1 {
                             fill: none;
-                            stroke: #000fb0;
+                            stroke: $primary ;
                             stroke-miterlimit: 10;
                             stroke-width: 1px;
                           }
