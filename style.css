@@ -1950,7 +1950,7 @@ main .main_part#main_part_6 > .part_6_lower > .part_6_copyright > span > a {
 }
 
 body:has(#blog_main) {
-  background: #f1f1f1;
+  background: #fcfcfc;
 }
 
 #blog_main {
