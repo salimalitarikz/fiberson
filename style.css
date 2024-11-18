@@ -1515,6 +1515,11 @@ main .main_part#main_part_8 > .part_8_box > .part_8_box_content > button {
 main .main_part#main_part_8 > .part_8_box > .part_8_box_content > button > ion-icon {
   font-size: 1.4rem;
 }
+@media screen and (min-width: 768px) {
+  main .main_part#main_part_8 {
+    display: none;
+  }
+}
 main .main_part#main_part_7 {
   padding: 3rem 1rem;
   padding-top: 12rem;
